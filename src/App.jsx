@@ -1,4 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react"; // 1. Import useEffect
+import AOS from "aos"; // 2. Import AOS
+import "aos/dist/aos.css"; // 3. Import AOS CSS
+
 import Navbar from "./components/Navbar";
 import TermsConditions from "./components/Term";
 import PrivacyPolicy from "./components/PrivacyPolicy";
@@ -14,6 +18,16 @@ import DeepClean from "./page/Services/DeepClean";
 import ScrollToHash from "./components/ScrollToHash";
 
 function App() {
+  // 4. Initialize AOS globally
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: true,     // Whether animation should happen only once - while scrolling down
+      easing: 'ease-in-out',
+      offset: 100,    // Offset (in px) from the original trigger point
+    });
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />

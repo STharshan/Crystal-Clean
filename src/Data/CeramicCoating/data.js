@@ -57,18 +57,16 @@ export const serviceDetailData = {
 };
 
 export const packagesData = {
-  detail: [
-    {
-      tittle: "Discover Our Ceramic Coating Packages",
-      desc: "Long-Term Protection Solutions"
-    }
-  ],
+detail: { // Changed from array [] to object {}
+    title: "Discover Our Ceramic Coating Packages", // Fixed typo: tittle -> title
+    desc: "Long-Term Protection Solutions"
+  },
   contactLinks: [
     { icon: "Phone", title: "+44 7446 253967", href: "tel:07446253967" },
     { icon: "Mail", title: "crystal.cl34n@gmail.com", href: "mailto:crystal.cl34n@gmail.com" },
-    { icon: "MapPin", title: "Unit 1B Cranmere Rd, Okehampton EX20 1UE", href: "https://maps.app.goo.gl/x37S2ncozFs2e4B67" },
+    { icon: "MapPin", title: "Unit 1B Cranmere Rd, Okehampton EX20 1UE", href: "https://maps.google.com" },
   ],
-
+  
   packages: [
     {
       type: "1 YEAR CERAMIC COATING",

@@ -1,4 +1,4 @@
-import React from 'react';
+
 // Components
 import ServiceBanner from '../../Common/ServiceBanner';
 import ServiceDetail from '../../Common/ServiceDetail';

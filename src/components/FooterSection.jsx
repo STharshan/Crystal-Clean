@@ -1,4 +1,3 @@
-// components/FooterSection.jsx
 import { Facebook, Instagram } from "lucide-react";
 import { FaTiktok } from "react-icons/fa"; // 
 import { Link } from "react-router-dom";
@@ -20,7 +19,7 @@ export default function FooterSection() {
                 href="https://web.facebook.com/p/Crystal-clean-100080908440119/?_rdc=1&_rdr#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-600 transition"
+                className="text-gray-400 hover:text-[#0A7BDF] transition"
               >
                 <Facebook size={20} />
               </a>
@@ -28,7 +27,7 @@ export default function FooterSection() {
                 href="https://www.instagram.com/crystal.clean.detail22/#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#E1306C] transition"
+                className="text-gray-400 hover:text-pink-600 transition"
               >
                 <Instagram size={20} />
               </a>
@@ -47,11 +46,11 @@ export default function FooterSection() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-[#861918] transition">Home</a></li>
-              <li><a href="#about" className="hover:text-[#861918] transition">About Us</a></li>
-              <li><a href="#services" className="hover:text-[#861918] transition">Service</a></li>
-              <li><Link to="/gallery" className="hover:text-[#861918] transition">Gallery</Link></li>
-              <li><a href="#contact" className="hover:text-[#861918] transition">Contact</a></li>
+              <li><a href="/#" className="hover:text-[#0A7BDF] transition">Home</a></li>
+              <li><a href="/#about" className="hover:text-[#0A7BDF] transition">About Us</a></li>
+              <li><a href="/#whychoose" className="hover:text-[#0A7BDF] transition">Why Choose</a></li>
+              <li><Link to="/gallery" className="hover:text-[#0A7BDF] transition">Gallery</Link></li>
+              <li><a href="/#contact" className="hover:text-[#0A7BDF] transition">Contact</a></li>
             </ul>
           </div>
 
@@ -75,13 +74,13 @@ export default function FooterSection() {
               </ul>
               <li>
                 <span className="text-white font-semibold">Phone:</span>{" "}
-                <a href="tel:+447446253967" className="hover:underline text-lg hover:text-[#861918]">
+                <a href="tel:+447446253967" className="hover:underline text-lg hover:text-[#0A7BDF]">
                   +44 7446 253967
                 </a>
               </li>
               <li>
                 <span className="text-white font-semibold">Email:</span>{" "}
-                <a href="mailto:crystal.cl34n@gmail.com" className="hover:underline text-lg hover:text-[#861918]">
+                <a href="mailto:crystal.cl34n@gmail.com" className="hover:underline text-lg hover:text-[#0A7BDF]">
                   crystal.cl34n@gmail.com
                 </a>
               </li>
@@ -98,11 +97,11 @@ export default function FooterSection() {
         <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-gray-400">
           {/* Left: Terms & Privacy */}
           <div className="flex gap-4 text-sm">
-            <a href="/terms" className="hover:text-[#861918] transition duration-300">
+            <a href="/terms" className="hover:text-[#0A7BDF] transition duration-300">
               Terms & Conditions
             </a>
             <span className="text-gray-500">|</span>
-            <a href="/privacy" className="hover:text-[#861918] transition duration-300">
+            <a href="/privacy" className="hover:text-[#0A7BDF] transition duration-300">
               Privacy Policy
             </a>
           </div>
@@ -114,7 +113,7 @@ export default function FooterSection() {
               href="https://www.ansely.co.uk/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#861918] hover:underline"
+              className="text-[#0A7BDF] hover:underline"
             >
               Ansely
             </a>

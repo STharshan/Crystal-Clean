@@ -1,30 +1,35 @@
-import React from 'react';
+
 import { Check } from 'lucide-react';
 
-// Pass 'data' as a prop
 const ServiceDetail = ({ data }) => {
-  // Guard clause to prevent errors if data is missing
+  // Brand color constant
+  const brandColor = '#0A7BDF';
+
   if (!data) return null;
 
-  const { mainTitle, mainDescription, benefits, process,subDesc } = data;
+  const { mainTitle, mainDescription, benefits, process, subDesc } = data;
 
   return (
-    <section className="bg-black py-16 md:py-24 transition-colors duration-500">
+    /* Background flips between White and Black */
+    <section className="bg-white dark:bg-black py-16 md:py-24 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header Section */}
         <div className="max-w-4xl mb-16">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-0.5 bg-brand"></div>
-            <span className="text-brand font-bold uppercase tracking-[0.3em] text-[10px]">Professional Service • Excellence</span>
+            <div className="w-10 h-0.5" style={{ backgroundColor: brandColor }}></div>
+            <span className="font-bold uppercase tracking-[0.3em] text-[10px]" style={{ color: brandColor }}>
+              Professional Service • Excellence
+            </span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tighter uppercase">
+          {/* Text flips between Black and White */}
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white mb-8 tracking-tighter uppercase">
             {mainTitle}
           </h2>
-          <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-3xl">
+          <p className="text-gray-600 dark:text-gray-400 text-lg md:text-xl leading-relaxed max-w-3xl">
             {mainDescription}
           </p>
-          <p className="text-gray-400 mt-3 text-lg md:text-xl leading-relaxed max-w-3xl">
+          <p className="text-gray-600 dark:text-gray-400 mt-3 text-lg md:text-xl leading-relaxed max-w-3xl">
             {subDesc}
           </p>
         </div>
@@ -33,24 +38,30 @@ const ServiceDetail = ({ data }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           
           {/* Left Column: Benefits */}
-          <div className="bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-white/5 hover:border-brand/30 transition-colors duration-500 group">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 uppercase tracking-tight flex items-center gap-3">
-              <span className="w-2 h-8 bg-brand rounded-full"></span>
+          <div className="bg-gray-50 dark:bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-gray-200 dark:border-white/5 hover:border-[#0A7BDF]/30 transition-colors duration-500 group">
+            <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-10 uppercase tracking-tight flex items-center gap-3">
+              <span className="w-2 h-8 rounded-full" style={{ backgroundColor: brandColor }}></span>
               {benefits?.title}
             </h3>
             <div className="space-y-10">
               {benefits?.items?.map((item, index) => (
                 <div key={index} className="flex gap-5">
                   <div className="shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full bg-brand/10 flex items-center justify-center border border-brand/20 group-hover:bg-brand transition-colors duration-500">
-                      <Check className="text-brand group-hover:text-white w-3.5 h-3.5 transition-colors duration-500" />
+                    <div 
+                      className="w-6 h-6 rounded-full flex items-center justify-center border transition-colors duration-500 group-hover:bg-[#0A7BDF] border-[#0A7BDF]/30" 
+                      style={{ backgroundColor: `${brandColor}1A` }}
+                    >
+                      <Check 
+                        className="w-3.5 h-3.5 transition-colors duration-500 group-hover:text-white" 
+                        style={{ color: brandColor }} 
+                      />
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-white mb-2 uppercase tracking-wide group-hover:text-brand transition-colors">
+                    <h4 className="text-lg font-bold text-black dark:text-white mb-2 uppercase tracking-wide transition-colors group-hover:text-[#0A7BDF]">
                       {item.heading}
                     </h4>
-                    <p className="text-gray-500 leading-relaxed text-sm md:text-base">{item.text}</p>
+                    <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm md:text-base">{item.text}</p>
                   </div>
                 </div>
               ))}
@@ -58,26 +69,26 @@ const ServiceDetail = ({ data }) => {
           </div>
 
           {/* Right Column: Process */}
-          <div className="bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-white/5 hover:border-brand/30 transition-colors duration-500 group">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-10 uppercase tracking-tight flex items-center gap-3">
-              <span className="w-2 h-8 bg-white/20 rounded-full group-hover:bg-brand transition-colors"></span>
+          <div className="bg-gray-50 dark:bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-gray-200 dark:border-white/5 hover:border-[#0A7BDF]/30 transition-colors duration-500 group">
+            <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-10 uppercase tracking-tight flex items-center gap-3">
+              <span className="w-2 h-8 bg-black/10 dark:bg-white/20 rounded-full group-hover:bg-[#0A7BDF] transition-colors"></span>
               {process?.title}
             </h3>
             <div className="space-y-10">
               {process?.steps?.map((step, index) => (
                 <div key={index} className="flex gap-5 relative">
                   {index !== process.steps.length - 1 && (
-                    <div className="absolute left-4 top-10 h-full bg-white/5 group-hover:bg-brand/20 transition-colors" />
+                    <div className="absolute left-4 top-10 h-full bg-black/5 dark:bg-white/5 group-hover:bg-[#0A7BDF]/20 transition-colors" />
                   )}
                   
-                  <div className="shrink-0 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-xs font-black text-gray-500 group-hover:text-white group-hover:border-brand group-hover:bg-brand transition-all duration-500 z-10 bg-[#0A0A0A]">
+                  <div className="shrink-0 w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center text-xs font-black text-gray-400 dark:text-gray-500 group-hover:text-white group-hover:border-[#0A7BDF] group-hover:bg-[#0A7BDF] transition-all duration-500 z-10 bg-white dark:bg-[#0A0A0A]">
                     {index + 1}
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-white mb-2 uppercase tracking-wide">
+                    <h4 className="text-lg font-bold text-black dark:text-white mb-2 uppercase tracking-wide">
                       {step.heading}
                     </h4>
-                    <p className="text-gray-500 leading-relaxed text-sm md:text-base">{step.text}</p>
+                    <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm md:text-base">{step.text}</p>
                   </div>
                 </div>
               ))}

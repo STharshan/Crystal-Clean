@@ -1,64 +1,107 @@
-
 export default function AboutSection() {
   return (
-    <section className="relative w-full bg-[#111] py-20" id="about">
-      <div className="relative max-w-7xl mx-auto">
+    <section 
+      className="relative w-full bg-white dark:bg-[#0E0E0E] py-20 transition-colors duration-300" 
+      id="about"
+    >
+      <div className="relative max-w-7xl mx-auto px-4 md:px-0">
 
-        {/* IMAGE — RESPONSIVE, NO AOS */}
-        <img
-          src="/2.jpg"
-          alt="Boxing training"
-          className="
-            w-full
-            max-w-[900px]
-            h-[400px]
-            md:h-[500px]
-            lg:h-[600px]
-            object-cover
-          "
-        />
+        {/* IMAGE — RESPONSIVE */}
+        <div 
+          className="relative overflow-hidden rounded-2xl lg:rounded-none lg:rounded-r-2xl shadow-2xl"
+          data-aos="fade-right" 
+          data-aos-duration="1000"
+        >
+          <img
+            src="/about.png"
+            alt="Vehicle Detailing Professional"
+            className="
+              w-full
+              max-w-[900px]
+              h-[400px]
+              md:h-[500px]
+              lg:h-[650px]
+              object-cover
+              transition-transform duration-700 hover:scale-105
+            "
+          />
+          {/* Subtle Blue overlay for branding */}
+          <div className="absolute inset-0 bg-[#0A7BDF]/10 pointer-events-none"></div>
+        </div>
 
         {/* TEXT BOX — OVERLAY ON DESKTOP */}
         <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000"
           className="
-            bg-black
-            text-white
-            shadow-xl
+            bg-[#F9F9F9] 
+            dark:bg-[#0E0E0E]
+            text-[#0E0E0E] 
+            dark:text-white
+            shadow-2xl
             w-full
+            border border-gray-100 dark:border-gray-800
 
             lg:absolute
             lg:top-1/2
             lg:right-0
             lg:-translate-y-1/2
             lg:w-[50%]
-            lg:h-[500px]
+            lg:h-auto
+            lg:min-h-[500px]
             lg:flex 
             lg:flex-col
             lg:justify-center
 
-            p-10 
+            p-8 
             md:p-12 
             lg:p-16
-            mt-6
+            -mt-10
             lg:mt-0
+            z-10
+            rounded-xl
+            lg:rounded-l-xl
           "
         >
-          {/* RED BAR — ONLY DESKTOP */}
-          <div className="hidden lg:block absolute left-0 top-0 h-full w-2 bg-red-600"></div>
+          {/* ACCENT BAR — Blue in Light, Yellow in Dark */}
+          <div className="hidden lg:block absolute left-0 top-0 h-full w-2 bg-[#0A7BDF] dark:bg-[#FFDD00]"></div>
 
           {/* CONTENT */}
           <div className="lg:ml-6">
-            <h2 className="text-3xl md:text-4xl font-extrabold uppercase leading-tight mb-6">
-              ABOUT CRYSTAL CLEAN
+            <h2 
+              className="text-3xl md:text-4xl font-black uppercase leading-tight mb-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              ABOUT <span className="text-[#0A7BDF] dark:text-[#FFDD00]">CRYSTAL CLEAN</span>
             </h2>
 
-            <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-6">
-             We are a dedicated vehicle detailing company in Okehampton, offering professional-level cleaning, polishing, ceramic coating, and PPF services for cars, motorcycles, and caravans. Our team brings years of detailing experience, helping every vehicle look its absolute best — no matter its condition.
+            <p 
+              className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              We are a dedicated vehicle detailing company in Okehampton, offering professional-level cleaning, polishing, ceramic coating, and PPF services for cars, motorcycles, and caravans. 
             </p>
 
-            <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-8">
-              If you want a premium, reliable, and results-driven service, whether at our fully equipped studio or via our mobile detailing service, you’re in the right place.
+            <p 
+              className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-8"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              Our team brings years of detailing experience, helping every vehicle look its absolute best — no matter its condition. Whether at our fully equipped studio or via our mobile detailing service, we deliver premium, results-driven care.
             </p>
+
+            {/* Sub-Feature Highlight */}
+            <div 
+              className="flex items-center gap-4 text-[#0A7BDF] dark:text-[#FFDD00] font-bold"
+              data-aos="zoom-in"
+              data-aos-delay="800"
+            >
+               <span className="h-px w-8 bg-[#0A7BDF] dark:bg-[#FFDD00]"></span>
+               <span>Devon's Premium Choice</span>
+            </div>
           </div>
         </div>
       </div>

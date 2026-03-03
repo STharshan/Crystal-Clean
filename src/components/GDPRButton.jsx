@@ -5,6 +5,9 @@ export default function GDPRConsent() {
   const [accepted, setAccepted] = useState(null); // true/false/null
   const [showIcon, setShowIcon] = useState(false); // Show cookie icon
 
+  // Brand color constant
+  const brandBlue = '#0A7BDF';
+
   useEffect(() => {
     const consent = localStorage.getItem("gdprConsent");
     if (consent === "true" || consent === "false") {
@@ -40,15 +43,16 @@ export default function GDPRConsent() {
       {/* Cookie Banner */}
       {visible && (
         <div className="fixed bottom-4 left-4 right-4 md:bottom-6 text-center md:right-6 md:left-auto max-w-full md:max-w-xs p-4 rounded-lg 
-                         text-gray-900 shadow-lg z-50 
-                      bg-gray-900  transition-colors">
-          <p className="text-sm mb-2 text-center text-white">
+                         shadow-lg z-50 transition-colors duration-500
+                         bg-white dark:bg-gray-900 border border-black/5 dark:border-white/5">
+          <p className="text-sm mb-2 text-center text-black dark:text-white">
             We use cookies to improve your experience.{" "}
           </p>
           <p className="mb-3">
             <a
               href="/privacy"
-              className="underline text-[#861918] hover:text-[#070981] "
+              className="underline hover:opacity-80"
+              style={{ color: brandBlue }}
             >
               See our Privacy Policy
             </a>
@@ -57,15 +61,15 @@ export default function GDPRConsent() {
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <button
               onClick={handleReject}
-              className="bg-[#861918] text-white px-4 py-2 rounded text-sm hover:bg-[#070981]  transition"
+              className="text-white px-4 py-2 rounded text-sm hover:opacity-90 transition"
+              style={{ backgroundColor: brandBlue }}
             >
               Reject
             </button>
             <button
               onClick={handleAccept}
-              className="bg-gray-100 text-gray-900 px-4 py-2 rounded text-sm 
-                         hover:bg-[#868386]  transition 
-                         "
+              className="bg-[#FFDD00] text-gray-900 px-4 py-2 rounded text-sm 
+                         hover:bg-[#ecd74c] transition"
             >
               Accept
             </button>
@@ -73,14 +77,14 @@ export default function GDPRConsent() {
         </div>
       )}
 
-      {/* Cookie Icon in Red Circle (smaller size) */}
+      {/* Cookie Icon (smaller size) */}
       {showIcon && !visible && (
         <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-40">
           <button
             onClick={handleIconClick}
-            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#861918] shadow-lg border border-white 
-                       flex items-center justify-center hover:scale-105 transition cursor-pointer
-                       "
+            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-lg border border-white 
+                       flex items-center justify-center hover:scale-105 transition cursor-pointer"
+            style={{ backgroundColor: brandBlue }}
             title="Cookie Preferences"
           >
             <img

@@ -1,9 +1,8 @@
-// components/MapSection.jsx
 export default function MapSection() {
   return (
     <section className="bg-black py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-16">
-        <h2 className="text-3xl font-bold mb-6 text-[#861918] text-center">
+        <h2 className="text-3xl font-bold mb-6 text-[#0A7BDF] text-center">
           Find Us
         </h2>
         <iframe
