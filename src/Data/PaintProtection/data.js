@@ -3,7 +3,7 @@
 export const serviceBannerData = {
   title: "Professional Paint Protection Film (PPF)",
   description: "Ultimate physical protection for your vehicle’s paintwork. Our certified PPF installation service provides an invisible shield against stone chips, scratches, and road debris — keeping your vehicle in pristine condition.",
-  thumbnailImage: "p.jpg",
+  thumbnailImage: "about.png",
 };
 
 export const serviceDetailData = {

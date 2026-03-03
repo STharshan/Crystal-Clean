@@ -76,7 +76,7 @@ const HeroSection = () => {
           <div className="relative w-full" data-aos="fade-left" data-aos-duration="1200">
             <div className="aspect-video sm:aspect-4/3 w-full relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800">
               <img
-                src="/1.jpg"
+                src="/1.png"
                 alt="Professional Detailing"
                 className="object-cover absolute inset-0 h-full w-full"
               />

@@ -30,7 +30,7 @@ const ServiceBanner = ({ data }) => {
         </div>
 
         {/* Image Only Section */}
-        <div className="relative overflow-hidden rounded-sm w-full lg:w-[800px] mx-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-black/5 dark:border-white/5">
+        <div className="relative overflow-hidden rounded-sm w-full lg:w-[1200px] mx-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-black/5 dark:border-white/5">
           <img 
             src={thumbnailImage} 
             alt={title} 

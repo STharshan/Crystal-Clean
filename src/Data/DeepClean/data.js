@@ -3,7 +3,7 @@
 export const serviceBannerData = {
   title: "Deep Clean & Valeting Services",
   description: "Restore your vehicle inside and out with our professional deep cleaning services. From a safe exterior wash to a full interior transformation, Crystal Clean delivers premium results at our Okehampton studio or via our fully equipped mobile service across Devon.",
-  thumbnailImage: "7.jpg",
+  thumbnailImage: "d.png",
 };
 
 export const serviceDetailData = {

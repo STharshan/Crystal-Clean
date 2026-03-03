@@ -59,9 +59,10 @@ export default function FooterSection() {
             <h3 className="text-lg font-semibold text-white mb-4">Business Info</h3>
             <ul className="text-sm space-y-2">
               <ul className="space-y-2">
+                <p className="text-white font-semibold">Opening Hours</p>
                 <li>
-                  <span className="text-white font-semibold">Opening Hours:</span>
-                  <span className="text-lg"> 9:00 AM – 5:00 PM (Mon–Fri)</span>
+                  <span className="text-white font-semibold">Mon - Fri: </span>
+                  <span className="text-lg"> 9:00 AM – 5:00 PM</span>
                 </li>
                 <li>
                   <span className="text-white font-semibold">Saturday:</span>
