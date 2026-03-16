@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const paintImages = [
   '/1.jpg', '/2.jpg', '/3.jpg', '/4.jpg', '/5.jpg', '/6.jpg', 
@@ -132,13 +133,13 @@ const PaintWorkSection = () => {
 
         {/* Contact Button - FIXED VISIBILITY */}
         <div className="mt-12 text-center relative z-20">
-          <a href="/contact" className="inline-block">
-            <button className="group/btn bg-[#0A7BDF] hover:bg-blue-600 text-white font-bold px-10 py-4 rounded-full flex items-center gap-3 shadow-[0_10px_20px_rgba(10,123,223,0.3)] transition-all duration-300 transform hover:scale-105 active:scale-95">
+          <Link to="/#contact" className="inline-block">
+            <div className="group/btn bg-[#0A7BDF] hover:bg-blue-600 text-white font-bold px-10 py-4 rounded-full flex items-center gap-3 shadow-[0_10px_20px_rgba(10,123,223,0.3)] transition-all duration-300 transform hover:scale-105 active:scale-95">
               <Phone className="w-5 h-5 fill-current" />
               <span className="text-base sm:text-lg uppercase tracking-wide">Contact Us Today</span>
               <ChevronRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-            </button>
-          </a>
+            </div>
+          </Link>
         </div>
       </div>
 

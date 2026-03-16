@@ -55,28 +55,6 @@ export const serviceDetailData = {
       }
     ]
   },
-  // Right Column - How it works
-  process: {
-    title: "How It Works",
-    steps: [
-      {
-        heading: "Book a Consultation",
-        text: "Contact us to discuss your vehicle and the level of protection required."
-      },
-      {
-        heading: "Vehicle Preparation",
-        text: "We thoroughly clean and decontaminate the paintwork to ensure a perfect bonding surface."
-      },
-      {
-        heading: "Precision Film Installation",
-        text: "PPF is carefully applied to selected panels using professional installation techniques to ensure seamless coverage."
-      },
-      {
-        heading: "Final Inspection & Aftercare Guidance",
-        text: "We complete a detailed inspection and provide advice on maintaining your protected vehicle."
-      }
-    ]
-  }
 }
 
 

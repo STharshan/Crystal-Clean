@@ -36,9 +36,9 @@ const PrivacyPolicy = () => {
                         We only process your personal data where we have a lawful basis to do so. This includes:
                     </p>
                     <ul className="list-disc ml-6 mt-2 space-y-1 text-gray-800 dark:text-gray-200">
-                        <li><span className="font-bold text-black dark:text-white">Contract</span> – to provide a quote, arrange services, or fulfill an agreement with you</li>
+                        <li><span className="font-bold text-black dark:text-white">Contract</span> – to provide a quote, arrange services, or fulfil an agreement with you</li>
                         <li><span className="font-bold text-black dark:text-white">Consent</span> – when you give us permission to contact you for specific purposes</li>
-                        <li><span className="font-bold text-black dark:text-white">Legitimate interests</span> – to respond to inquiries and manage our business effectively</li>
+                        <li><span className="font-bold text-black dark:text-white">Legitimate interests</span> – to respond to enquiries and manage our business effectively</li>
                         <li><span className="font-bold text-black dark:text-white">Legal obligation</span> – where we must comply with the law</li>
                     </ul>
                 </section>
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
                         We use your personal data to:
                     </p>
                     <ul className="list-disc ml-6 mt-2 space-y-1 text-gray-800 dark:text-gray-200">
-                        <li>Respond to inquiries and provide quotes</li>
+                        <li>Respond to enquiries and provide quotes</li>
                         <li>Communicate with you about your project</li>
                         <li>Maintain business records and comply with legal requirements</li>
                     </ul>
@@ -80,14 +80,14 @@ const PrivacyPolicy = () => {
                 <section>
                     <h2 className="text-2xl font-bold mb-3" style={{ color: brandBlue }}>6. Data Security</h2>
                     <p className="leading-relaxed text-gray-800 dark:text-gray-200">
-                        We take appropriate measures to keep your personal information secure and prevent unauthorized access, disclosure, alteration, or destruction.
+                        We take appropriate measures to keep your personal information secure and prevent unauthorised access, disclosure, alteration, or destruction.
                     </p>
                 </section>
 
                 <section>
                     <h2 className="text-2xl font-bold mb-3" style={{ color: brandBlue }}>7. How Long We Keep Your Information</h2>
                     <p className="leading-relaxed text-gray-800 dark:text-gray-200">
-                        We keep your personal data only for as long as necessary to fulfill the purposes for which it was collected, including legal, accounting, or reporting requirements.
+                        We keep your personal data only for as long as necessary to fulfil the purposes for which it was collected, including legal, accounting, or reporting requirements.
                     </p>
                 </section>
 
