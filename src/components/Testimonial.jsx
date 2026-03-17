@@ -77,7 +77,7 @@ const TestimonialsSection = () => {
           onClick={() => scrollToSection("contact")}
           data-aos="zoom-in"
           data-aos-delay="200"
-          className="mt-8 md:mt-0 flex items-center gap-2 bg-[#01215F] dark:bg-[#F5A623] hover:scale-105 text-white dark:text-[#0E0E0E] font-bold uppercase px-8 py-4 rounded-xl transition-all duration-300 shadow-lg shadow-blue-500/20 dark:shadow-yellow-500/10"
+          className="mt-8 md:mt-0 flex items-center gap-2 bg-[#F5A623] hover:scale-105 text-white dark:text-[#0E0E0E] font-bold uppercase px-8 py-4 rounded-xl transition-all duration-300 shadow-lg shadow-blue-500/20 dark:shadow-yellow-500/10"
         >
           Book Your Detail
           <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>

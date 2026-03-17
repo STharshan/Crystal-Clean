@@ -149,7 +149,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-4 rounded-xl text-sm font-black uppercase tracking-widest transition-all shadow-xl hover:scale-[1.02] active:scale-95 bg-[#01215F] dark:bg-[#F5A623] text-white dark:text-[#0E0E0E]"
+                className="w-full py-4 rounded-xl text-sm font-black uppercase tracking-widest transition-all shadow-xl hover:scale-[1.02] active:scale-95 bg-[#F5A623] text-white dark:text-[#0E0E0E]"
               >
                 {loading ? 'Opening WhatsApp...' : 'Request Booking via WhatsApp'}
               </button>

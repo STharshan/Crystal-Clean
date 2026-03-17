@@ -8,7 +8,7 @@ const HeroSection = () => {
     },
     {
       title: "10+ Years Experience",
-      icon: <FaUserTie className="h-6 w-6 text-[#01215F] dark:text-[#F5A623]" />,
+      icon: <FaUserTie className="h-6 w-6 dark:text-[#01215F] text-[#F5A623]" />,
     },
     {
       title: "1000+ Satisfied Customers",
@@ -16,7 +16,7 @@ const HeroSection = () => {
     },
     {
       title: "Bespoke Detailing Packages",
-      icon: <FaStar className="h-6 w-6 text-[#01215F] dark:text-[#F5A623]" />,
+      icon: <FaStar className="h-6 w-6 dark:text-[#01215F] text-[#F5A623]" />,
     },
   ];
 
@@ -52,7 +52,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-xl text-gray-100 font-medium" data-aos="fade-right" data-aos-delay="200">
-              Premium Car, Motorcycle & Caravan Detailing
+              "Premium Car Detailing
             </p>
 
             <p className="text-lg text-gray-300 max-w-lg" data-aos="fade-right" data-aos-delay="400">
@@ -62,7 +62,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="600">
               <a
                 href="tel:+447446253967"
-                className="inline-flex items-center justify-center gap-2 text-sm bg-[#01215F] text-white shadow-lg h-12 rounded-md px-8 font-bold transition-all duration-300 hover:scale-105 active:scale-95"
+                className="inline-flex items-center justify-center gap-2 text-sm bg-[#F5A623] text-white shadow-lg h-12 rounded-md px-8 font-bold transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 <FaPhone className="h-4 w-4" />
                 Call Now

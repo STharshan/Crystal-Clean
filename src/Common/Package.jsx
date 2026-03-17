@@ -32,7 +32,7 @@ export default function Package({ data }) {
                         <div className="flex items-center gap-3 mb-4">
                             <div className="h-0.5 w-12" style={{ backgroundColor: brandBlue }}></div>
                             <h6 className="text-xs sm:text-sm font-semibold uppercase tracking-wider" style={{ color: brandBlue }}>
-                                {displayDetail?.title || displayDetail?.tittle} 
+                                {displayDetail?.title} 
                             </h6>
                         </div>
                         <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight">
@@ -71,7 +71,7 @@ export default function Package({ data }) {
                         >
                             <h6 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">{pkg.type}</h6>
                             <div className="rounded-lg p-5 mb-6 bg-gray-100 dark:bg-[#0b0b0b]">
-                                <h3 className="text-4xl sm:text-5xl font-bold" style={{ color: brandBlue }}>{pkg.price}</h3>
+                                <h3 className="text-4xl sm:text-5xl font-bold text-[#F5A623]">{pkg.price}</h3>
                             </div>
 
                             <div className="space-y-3 mb-6">

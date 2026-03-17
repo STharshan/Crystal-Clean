@@ -126,7 +126,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden xl:block">
             <HashLink to="/#contact">
-              <button className="px-6 py-2.5 bg-[#01215F] hover:bg-[#0862b3] dark:bg-[#F5A623] dark:text-[#0E0E0E] dark:hover:bg-[#e6c700] text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">
+              <button className="px-6 py-2.5 hover:bg-[#01215F] bg-[#F5A623] dark:text-[#0E0E0E] dark:hover:bg-[#e6c700] text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">
                 Get In Touch
               </button>
             </HashLink>
