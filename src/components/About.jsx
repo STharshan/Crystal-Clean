@@ -9,8 +9,7 @@ export default function AboutSection() {
         {/* IMAGE — RESPONSIVE */}
         <div 
           className="relative overflow-hidden rounded-2xl lg:rounded-none lg:rounded-r-2xl shadow-2xl"
-          data-aos="fade-right" 
-          data-aos-duration="1000"
+            
         >
           <img
             src="/about.png"
@@ -26,14 +25,11 @@ export default function AboutSection() {
             "
           />
           {/* Subtle Blue overlay for branding */}
-          <div className="absolute inset-0 bg-[#0A7BDF]/10 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-[#01215F]/10 pointer-events-none"></div>
         </div>
 
         {/* TEXT BOX — OVERLAY ON DESKTOP */}
         <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-duration="1000"
           className="
             bg-[#F9F9F9] 
             dark:bg-[#0E0E0E]
@@ -65,41 +61,37 @@ export default function AboutSection() {
           "
         >
           {/* ACCENT BAR — Blue in Light, Yellow in Dark */}
-          <div className="hidden lg:block absolute left-0 top-0 h-full w-2 bg-[#0A7BDF] dark:bg-[#FFDD00]"></div>
+          <div className="hidden lg:block absolute left-0 top-0 h-full w-2 bg-[#01215F] dark:bg-[#F5A623]"></div>
 
           {/* CONTENT */}
-          <div className="lg:ml-6">
+          <div className="lg:ml-6 pt-10 sm:pt-0">
             <h2 
               className="text-3xl md:text-4xl font-black uppercase leading-tight mb-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
+       
             >
-              ABOUT <span className="text-[#0A7BDF] dark:text-[#FFDD00]">CRYSTAL CLEAN</span>
+              ABOUT <span className="text-[#01215F] dark:text-[#F5A623]">CRYSTAL CLEAN</span>
             </h2>
 
             <p 
               className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-6"
-              data-aos="fade-up"
-              data-aos-delay="500"
+            
             >
               We are a dedicated vehicle detailing company in Okehampton, offering professional-level cleaning, polishing, ceramic coating, and PPF services for cars, motorcycles, and caravans. 
             </p>
 
             <p 
               className="text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed mb-8"
-              data-aos="fade-up"
-              data-aos-delay="600"
+             
             >
-              Our team brings years of detailing experience, helping every vehicle look its absolute best — no matter its condition. Whether at our fully equipped studio or via our mobile detailing service, we deliver premium, results-driven care.
+              Our team brings years of detailing experience, helping every vehicle look its absolute best, no matter its condition. Whether at our fully equipped studio or via our mobile detailing service, we deliver premium, results-driven care.
             </p>
 
             {/* Sub-Feature Highlight */}
             <div 
-              className="flex items-center gap-4 text-[#0A7BDF] dark:text-[#FFDD00] font-bold"
-              data-aos="zoom-in"
-              data-aos-delay="800"
+              className="flex items-center gap-4 text-[#01215F] dark:text-[#F5A623] font-bold"
+           
             >
-               <span className="h-px w-8 bg-[#0A7BDF] dark:bg-[#FFDD00]"></span>
+               <span className="h-px w-8 bg-[#01215F] dark:bg-[#F5A623]"></span>
                <span>Devon's Premium Choice</span>
             </div>
           </div>

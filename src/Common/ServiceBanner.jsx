@@ -1,6 +1,6 @@
 const ServiceBanner = ({ data }) => {
   // Brand color constant
-  const brandColor = '#0A7BDF';
+  const brandColor = '#01215F';
 
   if (!data) return null;
 

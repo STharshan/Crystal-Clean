@@ -22,7 +22,7 @@ export default function ThemeToggle({ className = "" }) {
       onClick={toggle}
       className={`rounded-md border px-3 py-2 text-sm flex items-center
                   bg-white text-gray-900 border-gray-300
-                  dark:bg-neutral-800 dark:text-gray-100 dark:border-neutral-700 ${className} hover:bg-[#FFDD00] cursor-pointer active:bg-[#FFDD00] `}
+                  dark:bg-neutral-800 dark:text-gray-100 dark:border-neutral-700 ${className} hover:bg-[#F5A623] cursor-pointer active:bg-[#F5A623] `}
       aria-label="Toggle dark mode"
     >
       {isDark ? <FaMoon size={18} /> : <FaSun size={18} />}

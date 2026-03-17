@@ -12,7 +12,7 @@ export default function Contact() {
       icon: <Phone className="h-5 w-5" />,
       title: 'Phone',
       value: (
-        <a href="tel:+447446253967" className="hover:underline font-bold text-[#0A7BDF] dark:text-[#FFDD00]">
+        <a href="tel:+447446253967" className="hover:underline font-bold text-[#01215F] dark:text-[#F5A623]">
           +44 7446 253967
         </a>
       ),
@@ -22,7 +22,7 @@ export default function Contact() {
       icon: <Mail className="h-5 w-5" />,
       title: 'Email',
       value: (
-        <a href="mailto:crystal.cl34n@gmail.com" className="hover:underline font-bold text-[#0A7BDF] dark:text-[#FFDD00]">
+        <a href="mailto:crystal.cl34n@gmail.com" className="hover:underline font-bold text-[#01215F] dark:text-[#F5A623]">
           crystal.cl34n@gmail.com
         </a>
       ),
@@ -32,7 +32,7 @@ export default function Contact() {
       icon: <MapPin className="h-5 w-5" />,
       title: 'Address',
       value: (
-        <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline font-bold text-[#0A7BDF] dark:text-[#FFDD00]">
+        <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline font-bold text-[#01215F] dark:text-[#F5A623]">
           Unit 1B Cranmere Rd, Okehampton EX20 1UE
         </a>
       ),
@@ -70,9 +70,9 @@ export default function Contact() {
       <div className="container mx-auto px-4 max-w-7xl">
         
         {/* Heading */}
-        <div data-aos="fade-up" className="text-center mb-16">
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black mb-4 uppercase italic text-[#0E0E0E] dark:text-white">
-            Get In <span className="text-[#0A7BDF] dark:text-[#FFDD00]">Touch</span>
+            Get In <span className="text-[#01215F] dark:text-[#F5A623]">Touch</span>
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-600 dark:text-gray-400 font-medium">
             Ready to give your vehicle the Crystal Clean finish? 
@@ -83,14 +83,14 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           
           {/* Left - Contact Info */}
-          <div data-aos="fade-right" className="space-y-10">
+          <div className="space-y-10">
             <h3 className="text-2xl font-black uppercase italic text-[#0E0E0E] dark:text-white">
               Studio Information
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
               {contactInfo.map((item, i) => (
                 <div key={i} className="flex items-start space-x-5 group">
-                  <div className="p-4 rounded-2xl bg-[#0A7BDF]/10 dark:bg-[#FFDD00]/10 text-[#0A7BDF] dark:text-[#FFDD00] transition-transform group-hover:scale-110">
+                  <div className="p-4 rounded-2xl bg-[#01215F]/10 dark:bg-[#F5A623]/10 text-[#01215F] dark:text-[#F5A623] transition-transform group-hover:scale-110">
                     {item.icon}
                   </div>
                   <div>
@@ -107,7 +107,7 @@ export default function Contact() {
 
           {/* Right - Contact Form */}
           <div
-            data-aos="fade-left"
+            
             className="bg-gray-50 dark:bg-[#161616] border border-gray-100 dark:border-white/5 rounded-3xl shadow-2xl p-8 md:p-10"
           >
             <h3 className="text-xl font-black uppercase italic mb-8 text-[#0E0E0E] dark:text-white">
@@ -117,22 +117,22 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">First Name</label>
-                  <input name="firstName" placeholder="John" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#0A7BDF] outline-none transition-all" />
+                  <input name="firstName" placeholder="John" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all" />
                 </div>
                 <div>
                   <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Last Name</label>
-                  <input name="lastName" placeholder="Doe" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#0A7BDF] outline-none transition-all" />
+                  <input name="lastName" placeholder="Doe" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all" />
                 </div>
               </div>
 
               <div>
                 <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Email Address</label>
-                <input name="email" type="email" placeholder="john@example.com" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#0A7BDF] outline-none transition-all" />
+                <input name="email" type="email" placeholder="john@example.com" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all" />
               </div>
 
               <div>
                 <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Service Required</label>
-                <select name="service" className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#0A7BDF] outline-none transition-all appearance-none">
+                <select name="service" className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all appearance-none">
                   <option>Full Valet / Deep Clean</option>
                   <option>Machine Polishing</option>
                   <option>Ceramic Coating</option>
@@ -143,13 +143,13 @@ export default function Contact() {
 
               <div>
                 <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Message</label>
-                <textarea name="message" rows={4} placeholder="Vehicle make/model and preferred date..." required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#0A7BDF] outline-none transition-all resize-none"></textarea>
+                <textarea name="message" rows={4} placeholder="Vehicle make/model and preferred date..." required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all resize-none"></textarea>
               </div>
 
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-4 rounded-xl text-sm font-black uppercase tracking-widest transition-all shadow-xl hover:scale-[1.02] active:scale-95 bg-[#0A7BDF] dark:bg-[#FFDD00] text-white dark:text-[#0E0E0E]"
+                className="w-full py-4 rounded-xl text-sm font-black uppercase tracking-widest transition-all shadow-xl hover:scale-[1.02] active:scale-95 bg-[#01215F] dark:bg-[#F5A623] text-white dark:text-[#0E0E0E]"
               >
                 {loading ? 'Opening WhatsApp...' : 'Request Booking via WhatsApp'}
               </button>

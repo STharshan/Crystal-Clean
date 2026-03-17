@@ -33,31 +33,27 @@ export default function GalleryHeader() {
     <section
       ref={sectionRef}
       /* Changed from pure white to a softer gray-50/zinc-100 */
-      className="relative w-full min-h-screen bg-white dark:bg-black overflow-hidden transition-colors duration-700"
+      className="relative w-full h-screen bg-white dark:bg-black overflow-hidden transition-colors duration-700"
     >
       {/* Top-right image */}
       <div
-        className="absolute top-0 right-0 w-1/2 h-1/2 bg-no-repeat bg-cover bg-right "
-        style={{ backgroundImage: "url('/4.jpg')" }}
+        className="absolute top-0 right-0 w-1/2 h-1/2 bg-no-repeat bg-cover object-center bg-right "
+        style={{ backgroundImage: "url('/1.png')" }}
       ></div>
 
       {/* Bottom-left image */}
       <div
-        className="absolute -bottom-10 left-0 w-1/2 h-1/2 bg-no-repeat bg-cover bg-left"
-        style={{ backgroundImage: "url('/2.jpg')" }}
+        className="absolute -bottom-10 left-0 w-1/2 h-1/2 bg-no-repeat bg-cover object-center bg-left"
+        style={{ backgroundImage: "url('/c1.png')" }}
       ></div>
 
       {/* Content Overlay - Added backdrop-blur for a premium glass feel in light mode */}
       <div
-        className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-4 transition-all duration-500 ease-in-out 
+        className="relative z-10 flex flex-col items-center justify-center text-center h-screen px-4 transition-all duration-500 ease-in-out 
                    "
-        style={{
-          opacity: opacity,
-          filter: `brightness(${brightness})`,
-        }}
       >
         {/* Added a subtle blue accent line above the title */}
-        <div className="w-12 h-1 bg-[#0A7BDF] mb-6 rounded-full" />
+        <div className="w-12 h-1 bg-[#01215F] mb-6 rounded-full" />
 
         <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-3xl font-black uppercase tracking-tighter text-zinc-900 dark:text-white">
           Over the Years, We’ve Transformed Vehicles Across Devon

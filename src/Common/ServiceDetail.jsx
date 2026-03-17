@@ -3,7 +3,7 @@ import { Check } from 'lucide-react';
 
 const ServiceDetail = ({ data }) => {
   // Brand color constant
-  const brandColor = '#0A7BDF';
+  const brandColor = '#01215F';
 
   if (!data) return null;
 
@@ -38,7 +38,7 @@ const ServiceDetail = ({ data }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
           
           {/* Left Column: Benefits */}
-          <div className="bg-gray-50 dark:bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-gray-200 dark:border-white/5 hover:border-[#0A7BDF]/30 transition-colors duration-500 group">
+          <div className="bg-gray-50 dark:bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-gray-200 dark:border-white/5 hover:border-[#01215F]/30 transition-colors duration-500 group">
             <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-10 uppercase tracking-tight flex items-center gap-3">
               <span className="w-2 h-8 rounded-full" style={{ backgroundColor: brandColor }}></span>
               {benefits?.title}
@@ -48,7 +48,7 @@ const ServiceDetail = ({ data }) => {
                 <div key={index} className="flex gap-5">
                   <div className="shrink-0 mt-1">
                     <div 
-                      className="w-6 h-6 rounded-full flex items-center justify-center border transition-colors duration-500 group-hover:bg-[#0A7BDF] border-[#0A7BDF]/30" 
+                      className="w-6 h-6 rounded-full flex items-center justify-center border transition-colors duration-500 group-hover:bg-[#01215F] border-[#01215F]/30" 
                       style={{ backgroundColor: `${brandColor}1A` }}
                     >
                       <Check 
@@ -58,7 +58,7 @@ const ServiceDetail = ({ data }) => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-black dark:text-white mb-2 uppercase tracking-wide transition-colors group-hover:text-[#0A7BDF]">
+                    <h4 className="text-lg font-bold text-black dark:text-white mb-2 uppercase tracking-wide transition-colors group-hover:text-[#01215F]">
                       {item.heading}
                     </h4>
                     <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm md:text-base">{item.text}</p>
@@ -69,19 +69,19 @@ const ServiceDetail = ({ data }) => {
           </div>
 
           {/* Right Column: Process */}
-          <div className="bg-gray-50 dark:bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-gray-200 dark:border-white/5 hover:border-[#0A7BDF]/30 transition-colors duration-500 group">
+          <div className="bg-gray-50 dark:bg-[#0A0A0A] rounded-2xl p-8 lg:p-12 border border-gray-200 dark:border-white/5 hover:border-[#01215F]/30 transition-colors duration-500 group">
             <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white mb-10 uppercase tracking-tight flex items-center gap-3">
-              <span className="w-2 h-8 bg-black/10 dark:bg-white/20 rounded-full group-hover:bg-[#0A7BDF] transition-colors"></span>
+              <span className="w-2 h-8 bg-black/10 dark:bg-white/20 rounded-full group-hover:bg-[#01215F] transition-colors"></span>
               {process?.title}
             </h3>
             <div className="space-y-10">
               {process?.steps?.map((step, index) => (
                 <div key={index} className="flex gap-5 relative">
                   {index !== process.steps.length - 1 && (
-                    <div className="absolute left-4 top-10 h-full bg-black/5 dark:bg-white/5 group-hover:bg-[#0A7BDF]/20 transition-colors" />
+                    <div className="absolute left-4 top-10 h-full bg-black/5 dark:bg-white/5 group-hover:bg-[#01215F]/20 transition-colors" />
                   )}
                   
-                  <div className="shrink-0 w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center text-xs font-black text-gray-400 dark:text-gray-500 group-hover:text-white group-hover:border-[#0A7BDF] group-hover:bg-[#0A7BDF] transition-all duration-500 z-10 bg-white dark:bg-[#0A0A0A]">
+                  <div className="shrink-0 w-8 h-8 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center text-xs font-black text-gray-400 dark:text-gray-500 group-hover:text-white group-hover:border-[#01215F] group-hover:bg-[#01215F] transition-all duration-500 z-10 bg-white dark:bg-[#0A0A0A]">
                     {index + 1}
                   </div>
                   <div>

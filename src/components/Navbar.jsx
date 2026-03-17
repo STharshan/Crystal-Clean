@@ -13,7 +13,7 @@ export default function Navbar() {
 
   /* Scroll Effect */
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -25,7 +25,6 @@ export default function Navbar() {
         setShowDropdown(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
@@ -47,17 +46,17 @@ export default function Navbar() {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
           ? "bg-white dark:bg-[#0E0E0E] shadow-xl py-2"
-          : "bg-transparent py-4"
+          : "bg-transparent py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        {/* Logo */}
+        {/* Logo - Uses 'invert' to turn white logo black when scrolled on light mode */}
         <div className="flex items-center">
           <Link to="/">
             <img
               src="/logo-white.png"
               alt="Logo"
-              className={`h-12 md:h-16 w-auto object-contain transition-all duration-300`}
+              className="h-12 md:h-18 w-auto object-contain transition-all duration-300"
             />
           </Link>
         </div>
@@ -67,20 +66,14 @@ export default function Navbar() {
           className={`hidden xl:flex items-center gap-8 font-bold transition-colors ${
             scrolled
               ? "text-[#0E0E0E] dark:text-white"
-              : "text-black dark:text-white"
+              : "text-white" // Always white over the video
           }`}
         >
-          <HashLink
-            to="/#"
-            className="hover:text-[#0A7BDF] dark:hover:text-[#FFDD00] transition"
-          >
+          <HashLink to="/#" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
             Home
           </HashLink>
 
-          <HashLink
-            to="/#about"
-            className="hover:text-[#0A7BDF] dark:hover:text-[#FFDD00] transition"
-          >
+          <HashLink to="/#about" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
             About Us
           </HashLink>
 
@@ -88,14 +81,12 @@ export default function Navbar() {
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setShowDropdown((prev) => !prev)}
-              className="flex items-center gap-1 hover:text-[#0A7BDF] dark:hover:text-[#FFDD00] transition focus:outline-none"
+              className="flex items-center gap-1 hover:text-[#01215F] dark:hover:text-[#F5A623] transition focus:outline-none"
             >
               Services
               <FiChevronDown
                 size={16}
-                className={`transition-transform duration-300 ${
-                  showDropdown ? "rotate-180" : ""
-                }`}
+                className={`transition-transform duration-300 ${showDropdown ? "rotate-180" : ""}`}
               />
             </button>
 
@@ -105,7 +96,7 @@ export default function Navbar() {
                   <Link
                     key={index}
                     to={item.path}
-                    className="block px-6 py-2.5 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:bg-[#0A7BDF] hover:text-white dark:hover:bg-[#FFDD00] dark:hover:text-[#0E0E0E] transition"
+                    className="block px-6 py-2.5 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:bg-[#01215F] hover:text-white dark:hover:bg-[#F5A623] dark:hover:text-[#0E0E0E] transition"
                     onClick={() => setShowDropdown(false)}
                   >
                     {item.name}
@@ -115,24 +106,15 @@ export default function Navbar() {
             )}
           </div>
 
-          <HashLink
-            to="/#whychoose"
-            className="hover:text-[#0A7BDF] dark:hover:text-[#FFDD00] transition"
-          >
+          <HashLink to="/#whychoose" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
             Why Choose
           </HashLink>
 
-          <HashLink
-            to="/gallery"
-            className="hover:text-[#0A7BDF] dark:hover:text-[#FFDD00] transition"
-          >
+          <HashLink to="/gallery" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
             Gallery
           </HashLink>
 
-          <HashLink
-            to="/#contact"
-            className="hover:text-[#0A7BDF] dark:hover:text-[#FFDD00] transition"
-          >
+          <HashLink to="/#contact" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
             Contact
           </HashLink>
         </nav>
@@ -144,17 +126,19 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden xl:block">
             <HashLink to="/#contact">
-              <button className="px-6 py-2.5 bg-[#0A7BDF] hover:bg-[#0862b3] dark:bg-[#FFDD00] dark:text-[#0E0E0E] dark:hover:bg-[#e6c700] text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">
+              <button className="px-6 py-2.5 bg-[#01215F] hover:bg-[#0862b3] dark:bg-[#F5A623] dark:text-[#0E0E0E] dark:hover:bg-[#e6c700] text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">
                 Get In Touch
               </button>
             </HashLink>
           </div>
 
-          {/* Mobile Toggle */}
+          {/* Mobile Toggle Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className={`xl:hidden p-2 rounded-md transition-colors ${
-              scrolled ? "text-[#0E0E0E] dark:text-white" : "text-white"
+              scrolled
+                ? "text-[#0E0E0E] dark:text-white"
+                : "text-white" // White over video
             }`}
           >
             {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
@@ -165,40 +149,26 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="xl:hidden absolute top-full left-0 w-full bg-white dark:bg-[#0E0E0E] px-6 py-8 space-y-6 shadow-2xl border-t border-gray-100 dark:border-gray-800 animate-fade-in-down">
-          <HashLink
-            to="/#"
-            className="block text-xl font-bold text-[#0E0E0E] dark:text-white"
-            onClick={handleMobileMenuClick}
-          >
+          <HashLink to="/#" className="block text-xl font-bold text-[#0E0E0E] dark:text-white" onClick={handleMobileMenuClick}>
             Home
           </HashLink>
 
-          <HashLink
-            to="/#about"
-            className="block text-xl font-bold text-[#0E0E0E] dark:text-white"
-            onClick={handleMobileMenuClick}
-          >
+          <HashLink to="/#about" className="block text-xl font-bold text-[#0E0E0E] dark:text-white" onClick={handleMobileMenuClick}>
             About Us
           </HashLink>
 
           {/* Mobile Services */}
           <div className="space-y-4">
             <button
-              onClick={() =>
-                setMobileServicesOpen((prev) => !prev)
-              }
+              onClick={() => setMobileServicesOpen((prev) => !prev)}
               className="flex justify-between w-full items-center text-xl font-bold text-[#0E0E0E] dark:text-white"
             >
               Services
-              <FiChevronDown
-                className={`transition-transform duration-300 ${
-                  mobileServicesOpen ? "rotate-180" : ""
-                }`}
-              />
+              <FiChevronDown className={`transition-transform duration-300 ${mobileServicesOpen ? "rotate-180" : ""}`} />
             </button>
 
             {mobileServicesOpen && (
-              <div className="pl-4 space-y-4 border-l-4 border-[#0A7BDF] dark:border-[#FFDD00]">
+              <div className="pl-4 space-y-4 border-l-4 border-[#01215F] dark:border-[#F5A623]">
                 {services.map((item, index) => (
                   <Link
                     key={index}
@@ -213,24 +183,16 @@ export default function Navbar() {
             )}
           </div>
 
-          <HashLink
-            to="/gallery"
-            className="block text-xl font-bold text-[#0E0E0E] dark:text-white"
-            onClick={handleMobileMenuClick}
-          >
+          <HashLink to="/gallery" className="block text-xl font-bold text-[#0E0E0E] dark:text-white" onClick={handleMobileMenuClick}>
             Gallery
           </HashLink>
 
-          <HashLink
-            to="/#contact"
-            className="block text-xl font-bold text-[#0E0E0E] dark:text-white"
-            onClick={handleMobileMenuClick}
-          >
+          <HashLink to="/#contact" className="block text-xl font-bold text-[#0E0E0E] dark:text-white" onClick={handleMobileMenuClick}>
             Contact
           </HashLink>
 
           <HashLink to="/#contact" onClick={handleMobileMenuClick}>
-            <button className="w-full py-4 bg-[#0A7BDF] dark:bg-[#FFDD00] text-white dark:text-[#0E0E0E] font-black rounded-xl text-lg uppercase tracking-widest transition-transform active:scale-95">
+            <button className="w-full py-4 bg-[#01215F] dark:bg-[#F5A623] text-white dark:text-[#0E0E0E] font-black rounded-xl text-lg uppercase tracking-widest transition-transform active:scale-95">
               Get a Quote
             </button>
           </HashLink>

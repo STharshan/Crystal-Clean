@@ -6,7 +6,7 @@ export default function GDPRConsent() {
   const [showIcon, setShowIcon] = useState(false); // Show cookie icon
 
   // Brand color constant
-  const brandBlue = '#0A7BDF';
+  const brandBlue = '#01215F';
 
   useEffect(() => {
     const consent = localStorage.getItem("gdprConsent");
@@ -68,7 +68,7 @@ export default function GDPRConsent() {
             </button>
             <button
               onClick={handleAccept}
-              className="bg-[#FFDD00] text-gray-900 px-4 py-2 rounded text-sm 
+              className="bg-[#F5A623] text-gray-900 px-4 py-2 rounded text-sm 
                          hover:bg-[#ecd74c] transition"
             >
               Accept

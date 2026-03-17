@@ -15,30 +15,30 @@ export default function ServiceSection() {
         {
             icon: FaSoap,
             title: "Deep Clean",
-            desc: "Comprehensive exterior washes and full interior valets removing dirt, grime, and odours — restoring your vehicle to pristine condition.",
-            color: "from-[#0A7BDF] to-[#005bb5]", // Brand Blue linear
-            borderColor: "border-[#0A7BDF]/30",
+            desc: "Comprehensive exterior washes and full interior valets removing dirt, grime, and odours, restoring your vehicle to pristine condition.",
+            color: "from-[#01215F] to-[#005bb5]", // Brand Blue linear
+            borderColor: "border-[#01215F]/30",
         },
         {
             icon: FaGem,
             title: "Polishing",
             desc: "Professional machine polishing to restore shine, remove swirl marks and light scratches, and prepare your vehicle for long-lasting protection.",
-            color: "from-[#FFDD00] to-[#e6c700]", // Brand Yellow linear
-            borderColor: "border-[#FFDD00]/30",
+            color: "from-[#F5A623] to-[#e6c700]", // Brand Yellow linear
+            borderColor: "border-[#F5A623]/30",
         },
         {
             icon: FaShieldAlt,
             title: "Ceramic Coating",
             desc: "Durable ceramic coatings delivering long-lasting gloss and hydrophobic protection against UV rays, dirt, and minor chemical damage.",
-            color: "from-[#0A7BDF] to-[#005bb5]",
-            borderColor: "border-[#0A7BDF]/30",
+            color: "from-[#01215F] to-[#005bb5]",
+            borderColor: "border-[#01215F]/30",
         },
         {
             icon: FaCarSide,
             title: "PPF Installation",
             desc: "Certified PPF installation providing invisible protection against stone chips, scratches, and everyday wear while preserving value.",
-            color: "from-[#FFDD00] to-[#e6c700]",
-            borderColor: "border-[#FFDD00]/30",
+            color: "from-[#F5A623] to-[#e6c700]",
+            borderColor: "border-[#F5A623]/30",
         },
     ];
 
@@ -49,8 +49,8 @@ export default function ServiceSection() {
         >
             {/* Background Accents */}
             <div className="absolute inset-0 opacity-10 dark:opacity-20 pointer-events-none">
-                <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#0A7BDF] rounded-full blur-[120px]"></div>
-                <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-[#FFDD00] rounded-full blur-[120px]"></div>
+                <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#01215F] rounded-full blur-[120px]"></div>
+                <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-[#F5A623] rounded-full blur-[120px]"></div>
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto">
@@ -58,7 +58,7 @@ export default function ServiceSection() {
                 {/* Header */}
                 <div className="text-center mb-16" data-aos="fade-up">
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-4 uppercase tracking-tighter">
-                        Our <span className="text-[#0A7BDF] dark:text-[#FFDD00]">Specialised</span> Services
+                        Our <span className="text-[#01215F] dark:text-[#F5A623]">Specialised</span> Services
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto font-medium">
                         Combining technical expertise with precision tools to handle everything from routine maintenance to complex paint protection.
@@ -91,8 +91,8 @@ export default function ServiceSection() {
                                         key={idx}
                                         onClick={() => setActiveIndex(idx)}
                                         className={`h-1.5 rounded-full transition-all duration-300 ${idx === activeIndex
-                                                ? "w-16 bg-[#0A7BDF] dark:bg-[#FFDD00]"
-                                                : "w-8 bg-gray-300 dark:bg-gray-700 hover:bg-[#0A7BDF]/40"
+                                                ? "w-16 bg-[#01215F] dark:bg-[#F5A623]"
+                                                : "w-8 bg-gray-300 dark:bg-gray-700 hover:bg-[#01215F]/40"
                                             }`}
                                     />
                                 ))}
@@ -110,7 +110,7 @@ export default function ServiceSection() {
                                     data-aos="fade-left"
                                     onClick={() => setActiveIndex(idx)}
                                     className={`cursor-pointer bg-gray-50 dark:bg-[#1a1a1a] border rounded-2xl p-6 transition-all duration-300 hover:scale-102 ${activeIndex === idx
-                                            ? "border-[#0A7BDF] dark:border-[#FFDD00] shadow-lg"
+                                            ? "border-[#01215F] dark:border-[#F5A623] shadow-lg"
                                             : "border-transparent"
                                         }`}
                                 >
@@ -137,7 +137,7 @@ export default function ServiceSection() {
                                 data-aos-delay={idx * 100}
                                 onClick={() => setActiveIndex(realIdx)}
                                 className={`cursor-pointer group bg-gray-50 dark:bg-[#1a1a1a] border rounded-2xl p-6 transition-all duration-300 hover:scale-105 ${activeIndex === realIdx
-                                        ? "border-[#0A7BDF] dark:border-[#FFDD00] shadow-lg"
+                                        ? "border-[#01215F] dark:border-[#F5A623] shadow-lg"
                                         : "border-transparent"
                                     }`}
                             >
@@ -158,8 +158,8 @@ export default function ServiceSection() {
                         { icon: FaStar, title: "5-Star Rated", desc: "Trusted by hundreds of customers" },
                         { icon: FaCar, title: "Crystal Clean", desc: "Precision automotive care" }
                     ].map((badge, i) => (
-                        <div key={i} className="bg-gray-100 dark:bg-[#0E0E0E] border border-gray-200 dark:border-gray-800 rounded-2xl p-6 text-center hover:bg-[#0A7BDF]/5 transition-all group">
-                            <badge.icon className="text-4xl text-[#0A7BDF] dark:text-[#FFDD00] mx-auto mb-3 opacity-80 group-hover:scale-110 transition-transform" />
+                        <div key={i} className="bg-gray-100 dark:bg-[#0E0E0E] border border-gray-200 dark:border-gray-800 rounded-2xl p-6 text-center hover:bg-[#01215F]/5 transition-all group">
+                            <badge.icon className="text-4xl text-[#01215F] dark:text-[#F5A623] mx-auto mb-3 opacity-80 group-hover:scale-110 transition-transform" />
                             <p className="font-black text-xl mb-1 uppercase tracking-tight">{badge.title}</p>
                             <p className="text-gray-500 dark:text-gray-500 text-sm font-medium">{badge.desc}</p>
                         </div>

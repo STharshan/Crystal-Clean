@@ -9,7 +9,7 @@ export const serviceBannerData = {
 export const serviceDetailData = {
   mainTitle: "Professional Paint Enhancement & Correction",
   mainDescription: "Over time, your vehicle’s paint can develop swirl marks, light scratches, oxidation, and dullness. Our machine polishing and paint correction services safely restore clarity and gloss while preserving the integrity of your paint.",
-  subDesc: "Using professional-grade compounds, polishing pads, and precision techniques, we tailor each service to your vehicle’s condition — whether it requires a light enhancement or more intensive correction. Our services are available at our fully equipped indoor studio, ensuring perfect lighting and weather-controlled conditions for the best possible results.",
+  subDesc: "Using professional-grade compounds, polishing pads, and precision techniques, we tailor each service to your vehicle’s condition, whether it requires a light enhancement or more intensive correction. Our services are available at our fully equipped indoor studio, ensuring perfect lighting and weather-controlled conditions for the best possible results.",
 
   benefits: {
     title: "When You Need Polishing",
@@ -59,7 +59,7 @@ export const serviceDetailData = {
 export const packagesData = {
   detail: [
     {
-      tittle: "Discover Our Professional Polishing Packages",
+      title: "Discover Our Professional Polishing Packages",
       desc: "Essential Paint Enhancement Services"
     }
   ],

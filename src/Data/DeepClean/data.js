@@ -9,7 +9,7 @@ export const serviceBannerData = {
 export const serviceDetailData = {
   mainTitle: "Professional Deep Cleaning & Valeting",
   mainDescription: "Our Deep Clean services are designed to thoroughly refresh, protect, and maintain your vehicle. Whether you need a quick exterior refresh or a complete interior and exterior transformation, we use professional-grade products, PH-neutral solutions (safe for ceramic coated vehicles), and proven detailing techniques.",
-  subDesc: "We are fully self-sufficient for mobile detailing — no water or power required — and our indoor studio ensures year-round service regardless of weather.",
+  subDesc: "We are fully self-sufficient for mobile detailing with no water or power required and our indoor studio ensures year-round service regardless of weather.",
 
   benefits: {
     title: "When You Need a Deep Clean",
@@ -59,7 +59,7 @@ export const serviceDetailData = {
 export const packagesData = {
   detail: [
     {
-      tittle: "Discover Our Complete Deep Clean Packages",
+      title: "Discover Our Complete Deep Clean Packages",
       desc: "Essential Valeting Services"
     }
   ],
@@ -111,7 +111,7 @@ export const packagesData = {
       price: "£40",
       features: [
         { description: "Safely detail your engine bay using steam or foam methods depending on individual requirements." },
-        { description: "A careful and professional clean — not just a rinse." },
+        { description: "A careful and professional clean, not just a rinse." },
       ],
       btnText: "Add Engine Bay Cleaning",
       iconColor: "#0FB981",
