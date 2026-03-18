@@ -12,7 +12,7 @@ export default function Contact() {
       icon: <Phone className="h-5 w-5" />,
       title: 'Phone',
       value: (
-        <a href="tel:+447446253967" className="hover:underline font-bold text-[#01215F] dark:text-[#F5A623]">
+        <a href="tel:+447446253967" className="hover:underline font-bold text-[#13AFFE] dark:text-[#F5A623]">
           +44 7446 253967
         </a>
       ),
@@ -22,7 +22,7 @@ export default function Contact() {
       icon: <Mail className="h-5 w-5" />,
       title: 'Email',
       value: (
-        <a href="mailto:crystal.cl34n@gmail.com" className="hover:underline font-bold text-[#01215F] dark:text-[#F5A623]">
+        <a href="mailto:crystal.cl34n@gmail.com" className="hover:underline font-bold text-[#13AFFE] dark:text-[#F5A623]">
           crystal.cl34n@gmail.com
         </a>
       ),
@@ -32,7 +32,7 @@ export default function Contact() {
       icon: <MapPin className="h-5 w-5" />,
       title: 'Address',
       value: (
-        <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline font-bold text-[#01215F] dark:text-[#F5A623]">
+        <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline font-bold text-[#13AFFE] dark:text-[#F5A623]">
           Unit 1B Cranmere Rd, Okehampton EX20 1UE
         </a>
       ),
@@ -72,7 +72,7 @@ export default function Contact() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black mb-4 uppercase italic text-[#0E0E0E] dark:text-white">
-            Get In <span className="text-[#01215F] dark:text-[#F5A623]">Touch</span>
+            Get In <span className="text-[#13AFFE] dark:text-[#F5A623]">Touch</span>
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-600 dark:text-gray-400 font-medium">
             Ready to give your vehicle the Crystal Clean finish? 
@@ -90,7 +90,7 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
               {contactInfo.map((item, i) => (
                 <div key={i} className="flex items-start space-x-5 group">
-                  <div className="p-4 rounded-2xl bg-[#01215F]/10 dark:bg-[#F5A623]/10 text-[#01215F] dark:text-[#F5A623] transition-transform group-hover:scale-110">
+                  <div className="p-4 rounded-2xl bg-[#13AFFE]/10 dark:bg-[#F5A623]/10 text-[#13AFFE] dark:text-[#F5A623] transition-transform group-hover:scale-110">
                     {item.icon}
                   </div>
                   <div>
@@ -117,22 +117,22 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">First Name</label>
-                  <input name="firstName" placeholder="John" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all" />
+                  <input name="firstName" placeholder="John" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all" />
                 </div>
                 <div>
                   <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Last Name</label>
-                  <input name="lastName" placeholder="Doe" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all" />
+                  <input name="lastName" placeholder="Doe" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all" />
                 </div>
               </div>
 
               <div>
                 <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Email Address</label>
-                <input name="email" type="email" placeholder="john@example.com" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all" />
+                <input name="email" type="email" placeholder="john@example.com" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all" />
               </div>
 
               <div>
                 <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Service Required</label>
-                <select name="service" className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all appearance-none">
+                <select name="service" className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all appearance-none">
                   <option>Full Valet / Deep Clean</option>
                   <option>Machine Polishing</option>
                   <option>Ceramic Coating</option>
@@ -143,7 +143,7 @@ export default function Contact() {
 
               <div>
                 <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Message</label>
-                <textarea name="message" rows={4} placeholder="Vehicle make/model and preferred date..." required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#01215F] outline-none transition-all resize-none"></textarea>
+                <textarea name="message" rows={4} placeholder="Vehicle make/model and preferred date..." required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all resize-none"></textarea>
               </div>
 
               <button

@@ -6,10 +6,12 @@ import AboutSection from '../components/About'
 import WhyChooseUs from "../components/WhyChoose"
 import ServiceSection from "../components/ServiceSection"
 import TestimonialsSection from "../components/Testimonial"
+import Navbar from "../components/Navbar"
 
 const Home = () => {
     return (
         <div>
+            <Navbar />
             <HeroSection />
             <AboutSection />
             <WhyChooseUs />

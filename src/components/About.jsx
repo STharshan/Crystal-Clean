@@ -25,7 +25,7 @@ export default function AboutSection() {
             "
           />
           {/* Subtle Blue overlay for branding */}
-          <div className="absolute inset-0 bg-[#01215F]/10 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-[#13AFFE]/10 pointer-events-none"></div>
         </div>
 
         {/* TEXT BOX — OVERLAY ON DESKTOP */}
@@ -61,7 +61,7 @@ export default function AboutSection() {
           "
         >
           {/* ACCENT BAR — Blue in Light, Yellow in Dark */}
-          <div className="hidden lg:block absolute left-0 top-0 h-full w-2 bg-[#01215F] dark:bg-[#F5A623]"></div>
+          <div className="hidden lg:block absolute left-0 top-0 h-full w-2 bg-[#13AFFE] dark:bg-[#F5A623]"></div>
 
           {/* CONTENT */}
           <div className="lg:ml-6 pt-10 sm:pt-0">
@@ -69,7 +69,7 @@ export default function AboutSection() {
               className="text-3xl md:text-4xl font-black uppercase leading-tight mb-6"
        
             >
-              ABOUT <span className="text-[#01215F] dark:text-[#F5A623]">CRYSTAL CLEAN</span>
+              ABOUT <span className="text-[#13AFFE] dark:text-[#F5A623]">CRYSTAL CLEAN</span>
             </h2>
 
             <p 
@@ -88,10 +88,10 @@ export default function AboutSection() {
 
             {/* Sub-Feature Highlight */}
             <div 
-              className="flex items-center gap-4 text-[#01215F] dark:text-[#F5A623] font-bold"
+              className="flex items-center gap-4 text-[#13AFFE] dark:text-[#F5A623] font-bold"
            
             >
-               <span className="h-px w-8 bg-[#01215F] dark:bg-[#F5A623]"></span>
+               <span className="h-px w-8 bg-[#13AFFE] dark:bg-[#F5A623]"></span>
                <span>Devon's Premium Choice</span>
             </div>
           </div>

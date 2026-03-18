@@ -53,7 +53,7 @@ export default function GalleryHeader() {
                    "
       >
         {/* Added a subtle blue accent line above the title */}
-        <div className="w-12 h-1 bg-[#01215F] mb-6 rounded-full" />
+        <div className="w-12 h-1 bg-[#13AFFE] mb-6 rounded-full" />
 
         <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-3xl font-black uppercase tracking-tighter text-zinc-900 dark:text-white">
           Over the Years, We’ve Transformed Vehicles Across Devon

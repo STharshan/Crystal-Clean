@@ -60,11 +60,11 @@ const TestimonialsSection = () => {
         data-aos="fade-up"
       >
         <div data-aos="fade-right">
-          <p className="text-[#01215F] dark:text-[#F5A623] uppercase tracking-[5px] text-sm font-black mb-2">
+          <p className="text-[#13AFFE] dark:text-[#F5A623] uppercase tracking-[5px] text-sm font-black mb-2">
             Testimonials
           </p>
           <h2 className="text-4xl md:text-5xl font-black leading-[1.2]">
-            What Our <span className="text-[#01215F] dark:text-[#F5A623]">Customers</span> Say
+            What Our <span className="text-[#13AFFE] dark:text-[#F5A623]">Customers</span> Say
           </h2>
           <p className="text-gray-500 dark:text-[#868386] text-base mt-4 max-w-lg font-medium">
             Our mission is to deliver precision, passion, and perfection. 
@@ -96,13 +96,13 @@ const TestimonialsSection = () => {
         {[...testimonials, ...testimonials].map((item, i) => (
           <div
             key={`row1-${i}`}
-            className="bg-gray-50 dark:bg-[#161616] border border-gray-100 dark:border-[#1C1C1C] rounded-2xl p-8 flex flex-col justify-between shrink-0 hover:border-[#01215F] dark:hover:border-[#F5A623] transition-all duration-300 w-[380px] h-80 shadow-sm"
+            className="bg-gray-50 dark:bg-[#161616] border border-gray-100 dark:border-[#1C1C1C] rounded-2xl p-8 flex flex-col justify-between shrink-0 hover:border-[#13AFFE] dark:hover:border-[#F5A623] transition-all duration-300 w-[380px] h-80 shadow-sm"
           >
             <p className="italic text-gray-700 dark:text-[#CCCCCC] text-[15px] leading-relaxed">
               “{item.quote}”
             </p>
             <div className="flex items-center gap-3 mt-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#01215F] dark:bg-[#F5A623] text-white dark:text-[#0E0E0E] font-black rounded-xl">
+              <div className="w-12 h-12 flex items-center justify-center bg-[#13AFFE] dark:bg-[#F5A623] text-white dark:text-[#0E0E0E] font-black rounded-xl">
                 {item.name.charAt(0).toUpperCase()}
               </div>
               <div>
@@ -126,13 +126,13 @@ const TestimonialsSection = () => {
         {[...testimonials, ...testimonials].map((item, i) => (
           <div
             key={`row2-${i}`}
-            className="bg-gray-50 dark:bg-[#161616] border border-gray-100 dark:border-[#1C1C1C] rounded-2xl p-8 flex flex-col justify-between shrink-0 hover:border-[#01215F] dark:hover:border-[#F5A623] transition-all duration-300 w-[380px] h-80 shadow-sm"
+            className="bg-gray-50 dark:bg-[#161616] border border-gray-100 dark:border-[#1C1C1C] rounded-2xl p-8 flex flex-col justify-between shrink-0 hover:border-[#13AFFE] dark:hover:border-[#F5A623] transition-all duration-300 w-[380px] h-80 shadow-sm"
           >
             <p className="italic text-gray-700 dark:text-[#CCCCCC] text-[15px] leading-relaxed">
               “{item.quote}”
             </p>
             <div className="flex items-center gap-3 mt-6">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#01215F] dark:bg-[#F5A623] text-white dark:text-[#0E0E0E] font-black rounded-xl">
+              <div className="w-12 h-12 flex items-center justify-center bg-[#13AFFE] dark:bg-[#F5A623] text-white dark:text-[#0E0E0E] font-black rounded-xl">
                 {item.name.charAt(0).toUpperCase()}
               </div>
               <div>

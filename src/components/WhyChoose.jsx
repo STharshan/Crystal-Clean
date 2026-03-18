@@ -50,10 +50,10 @@ export default function WhyChooseUs() {
         {/* HEADER */}
         <div className="mb-14" data-aos="fade-down" data-aos-duration="1000">
           <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wide">
-            Why Choose <span className="text-[#01215F] dark:text-[#F5A623]">Us</span>
+            Why Choose <span className="text-[#13AFFE] dark:text-[#F5A623]">Us</span>
           </h2>
           <div 
-            className="w-20 h-1 bg-[#01215F] dark:bg-[#F5A623] mt-4"
+            className="w-20 h-1 bg-[#13AFFE] dark:bg-[#F5A623] mt-4"
             data-aos="fade-right"
             data-aos-delay="400"
           ></div>
@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
             >
               {/* ICON */}
               <div 
-                className="text-[#01215F] dark:text-[#F5A623] text-2xl mt-1 transform group-hover:scale-110 transition-transform duration-300"
+                className="text-[#13AFFE] dark:text-[#F5A623] text-2xl mt-1 transform group-hover:scale-110 transition-transform duration-300"
                 data-aos="zoom-in"
                 data-aos-delay={i * 100 + 200}
               >

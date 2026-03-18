@@ -4,19 +4,19 @@ const HeroSection = () => {
   const stats = [
     {
       title: "Mobile & Studio Detailing",
-      icon: <FaCar className="h-6 w-6 text-[#01215F] dark:text-[#F5A623]" />,
+      icon: <FaCar className="h-6 w-6 text-[#13AFFE] dark:text-[#F5A623]" />,
     },
     {
       title: "10+ Years Experience",
-      icon: <FaUserTie className="h-6 w-6 dark:text-[#01215F] text-[#F5A623]" />,
+      icon: <FaUserTie className="h-6 w-6 dark:text-[#13AFFE] text-[#F5A623]" />,
     },
     {
       title: "1000+ Satisfied Customers",
-      icon: <FaSmile className="h-6 w-6 text-[#01215F] dark:text-[#F5A623]" />,
+      icon: <FaSmile className="h-6 w-6 text-[#13AFFE] dark:text-[#F5A623]" />,
     },
     {
       title: "Bespoke Detailing Packages",
-      icon: <FaStar className="h-6 w-6 dark:text-[#01215F] text-[#F5A623]" />,
+      icon: <FaStar className="h-6 w-6 dark:text-[#13AFFE] text-[#F5A623]" />,
     },
   ];
 
@@ -48,7 +48,7 @@ const HeroSection = () => {
           {/* LEFT CONTENT */}
           <div className="space-y-6 text-left" data-aos="fade-right" data-aos-duration="1000">
             <h1 className="text-4xl md:text-5xl lg:text-[2.75rem] xl:text-6xl font-black leading-tight text-white mt-10 md:mt-0">
-              <span className="text-[#01215F]">Crystal Clean</span>
+              <span className="text-[#13AFFE]">Crystal Clean</span>
             </h1>
 
             <p className="text-xl text-gray-100 font-medium" data-aos="fade-right" data-aos-delay="200">
@@ -79,7 +79,7 @@ const HeroSection = () => {
             {/* Location Detail */}
             <div className="pt-6" data-aos="zoom-in" data-aos-delay="800">
               <div className="flex items-start gap-3 p-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20">
-                <FaMapMarkerAlt className="h-5 w-5 text-[#01215F] dark:text-[#F5A623] shrink-0 mt-1" />
+                <FaMapMarkerAlt className="h-5 w-5 text-[#13AFFE] dark:text-[#F5A623] shrink-0 mt-1" />
                 <div>
                   <p className="font-bold text-white">Location</p>
                   <p className="text-sm text-gray-200">
@@ -110,7 +110,7 @@ const HeroSection = () => {
                 key={index}
                 data-aos="fade-up"
                 data-aos-delay={index * 150}
-                className="flex flex-col items-center justify-center bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 shadow-sm hover:border-[#01215F] transition-all duration-300 group"
+                className="flex flex-col items-center justify-center bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 shadow-sm hover:border-[#13AFFE] transition-all duration-300 group"
               >
                 <div className="flex items-center justify-center mb-3 transform group-hover:scale-110 transition-transform">
                   {stat.icon}

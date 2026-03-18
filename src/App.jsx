@@ -3,7 +3,6 @@ import React, { useEffect } from "react"; // 1. Import useEffect
 import AOS from "aos"; // 2. Import AOS
 import "aos/dist/aos.css"; // 3. Import AOS CSS
 
-import Navbar from "./components/Navbar";
 import TermsConditions from "./components/Term";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import GDPRConsent from "./components/GDPRButton";
@@ -32,7 +31,6 @@ function App() {
     <Router>
       <ScrollToTop />
       <ScrollToHash />
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />

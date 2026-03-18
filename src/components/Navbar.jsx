@@ -69,11 +69,11 @@ export default function Navbar() {
               : "text-white" // Always white over the video
           }`}
         >
-          <HashLink to="/#" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
+          <HashLink to="/#" className="hover:text-[#13AFFE] dark:hover:text-[#F5A623] transition">
             Home
           </HashLink>
 
-          <HashLink to="/#about" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
+          <HashLink to="/#about" className="hover:text-[#13AFFE] dark:hover:text-[#F5A623] transition">
             About Us
           </HashLink>
 
@@ -81,7 +81,7 @@ export default function Navbar() {
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setShowDropdown((prev) => !prev)}
-              className="flex items-center gap-1 hover:text-[#01215F] dark:hover:text-[#F5A623] transition focus:outline-none"
+              className="flex items-center gap-1 hover:text-[#13AFFE] dark:hover:text-[#F5A623] transition focus:outline-none"
             >
               Services
               <FiChevronDown
@@ -96,7 +96,7 @@ export default function Navbar() {
                   <Link
                     key={index}
                     to={item.path}
-                    className="block px-6 py-2.5 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:bg-[#01215F] hover:text-white dark:hover:bg-[#F5A623] dark:hover:text-[#0E0E0E] transition"
+                    className="block px-6 py-2.5 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:bg-[#13AFFE] hover:text-white dark:hover:bg-[#F5A623] dark:hover:text-[#0E0E0E] transition"
                     onClick={() => setShowDropdown(false)}
                   >
                     {item.name}
@@ -106,15 +106,15 @@ export default function Navbar() {
             )}
           </div>
 
-          <HashLink to="/#whychoose" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
+          <HashLink to="/#whychoose" className="hover:text-[#13AFFE] dark:hover:text-[#F5A623] transition">
             Why Choose
           </HashLink>
 
-          <HashLink to="/gallery" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
+          <HashLink to="/gallery" className="hover:text-[#13AFFE] dark:hover:text-[#F5A623] transition">
             Gallery
           </HashLink>
 
-          <HashLink to="/#contact" className="hover:text-[#01215F] dark:hover:text-[#F5A623] transition">
+          <HashLink to="/#contact" className="hover:text-[#13AFFE] dark:hover:text-[#F5A623] transition">
             Contact
           </HashLink>
         </nav>
@@ -126,7 +126,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden xl:block">
             <HashLink to="/#contact">
-              <button className="px-6 py-2.5 hover:bg-[#01215F] bg-[#F5A623] dark:text-[#0E0E0E] dark:hover:bg-[#e6c700] text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">
+              <button className="px-6 py-2.5 hover:bg-[#13AFFE] bg-[#F5A623] dark:text-[#0E0E0E] dark:hover:bg-[#e6c700] text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">
                 Get In Touch
               </button>
             </HashLink>
@@ -168,7 +168,7 @@ export default function Navbar() {
             </button>
 
             {mobileServicesOpen && (
-              <div className="pl-4 space-y-4 border-l-4 border-[#01215F] dark:border-[#F5A623]">
+              <div className="pl-4 space-y-4 border-l-4 border-[#13AFFE] dark:border-[#F5A623]">
                 {services.map((item, index) => (
                   <Link
                     key={index}
@@ -192,7 +192,7 @@ export default function Navbar() {
           </HashLink>
 
           <HashLink to="/#contact" onClick={handleMobileMenuClick}>
-            <button className="w-full py-4 bg-[#01215F] dark:bg-[#F5A623] text-white dark:text-[#0E0E0E] font-black rounded-xl text-lg uppercase tracking-widest transition-transform active:scale-95">
+            <button className="w-full py-4 bg-[#13AFFE] dark:bg-[#F5A623] text-white dark:text-[#0E0E0E] font-black rounded-xl text-lg uppercase tracking-widest transition-transform active:scale-95">
               Get a Quote
             </button>
           </HashLink>

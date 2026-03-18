@@ -8,7 +8,7 @@ const iconMap = {
 };
 
 export default function Package({ data }) {
-    const brandBlue = '#01215F';
+    const brandBlue = '#13AFFE';
     if (!data) return null;
 
     const { contactLinks, packages, detail } = data;
@@ -53,7 +53,7 @@ export default function Package({ data }) {
                                 <div className="flex items-center justify-center h-10 w-10" style={{ color: brandBlue }}>
                                     {iconMap[link.icon]}
                                 </div>
-                                <h6 className="text-base font-semibold group-hover:text-[#01215F] transition-colors">
+                                <h6 className="text-base font-semibold group-hover:text-[#13AFFE] transition-colors">
                                     {link.title}
                                 </h6>
                             </a>
@@ -67,7 +67,7 @@ export default function Package({ data }) {
                         <div
                             key={idx}
                             className="border border-black/5 dark:border-white/10 rounded-2xl p-6 sm:p-8 transition-all duration-500
-                            bg-white dark:bg-[#151515] hover:border-[#01215F]/40 shadow-sm hover:shadow-xl"
+                            bg-white dark:bg-[#151515] hover:border-[#13AFFE]/40 shadow-sm hover:shadow-xl"
                         >
                             <h6 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">{pkg.type}</h6>
                             <div className="rounded-lg p-5 mb-6 bg-gray-100 dark:bg-[#0b0b0b]">

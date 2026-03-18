@@ -1,7 +1,7 @@
 
 
 const PrivacyPolicy = () => {
-    const brandBlue = '#01215F';
+    const brandBlue = '#13AFFE';
 
     return (
         <div className="mx-auto px-4 py-12 sm:px-6 lg:px-16 transition-colors duration-500 bg-white dark:bg-black text-black dark:text-white">

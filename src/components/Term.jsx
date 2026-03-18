@@ -1,6 +1,6 @@
 
 const TermsConditions = () => {
-  const brandBlue = '#01215F';
+  const brandBlue = '#13AFFE';
 
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white mx-auto px-4 py-8 transition-colors duration-500">
