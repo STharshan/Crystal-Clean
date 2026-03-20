@@ -101,9 +101,8 @@ const PaintWorkSection = () => {
                   <img
                     src={src}
                     alt={`Work Showcase ${index + 1}`}
-                    className="w-[300px] h-[420px] sm:w-[350px] sm:h-[490px] object-cover"
+                    className="w-[300px] h-[420px] sm:w-[350px] sm:h-[490px] object-top"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm text-[#13AFFE] font-bold px-3 py-1 rounded-full text-sm">
                     {index + 1}/{paintImages.length}
                   </div>
