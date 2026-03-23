@@ -33,8 +33,8 @@ export const GALLERY_ITEMS = [
    {
     id: 5,
     type: "single",
-    media: "image",
-    src: "/im1.jpeg",
+    media: "video",
+    src: "/v2.mp4",
   },
 
 ];
