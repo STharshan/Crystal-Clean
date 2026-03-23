@@ -45,10 +45,16 @@ export const GALLERY_ITEMS = [
     afterMedia: "image",
   },
 {
-    id: 5,
+    id: 7,
     type: "single",
     media: "image",
     src: "/im3.jpeg",
+  },
+  {
+    id: 8,
+    type: "single",
+    media: "video",
+    src: "/v3.mp4",
   },
 ];
 
