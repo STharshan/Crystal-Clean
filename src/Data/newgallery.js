@@ -36,7 +36,20 @@ export const GALLERY_ITEMS = [
     media: "video",
     src: "/v2.mp4",
   },
-
+    {
+    id: 6,
+    type: "before-after",
+    beforeSrc: "/before5.jpeg",
+    beforeMedia: "image",
+    afterSrc: "/after5.jpeg",
+    afterMedia: "image",
+  },
+{
+    id: 5,
+    type: "single",
+    media: "image",
+    src: "/im3.jpeg",
+  },
 ];
 
 export default GALLERY_ITEMS;
