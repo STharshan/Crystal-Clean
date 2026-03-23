@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
     {
       icon: <FaMoneyBillWave />,
       title: "Transparent Pricing",
-      desc: "No hidden costs. Every service has clear pricing, and we’ll advise you on the best package for your vehicle.",
+      desc: "No hidden costs. Every service has clear pricing, and we'll advise you on the best package for your vehicle.",
     },
     {
       icon: <FaTools />,
@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
           <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wide">
             Why Choose <span className="text-[#13AFFE] dark:text-[#F5A623]">Us</span>
           </h2>
-          <div 
+          <div
             className="w-20 h-1 bg-[#13AFFE] dark:bg-[#F5A623] mt-4"
             data-aos="fade-right"
             data-aos-delay="400"
@@ -62,15 +62,15 @@ export default function WhyChooseUs() {
         {/* CONTENT - 2-column grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
           {reasons.map((item, i) => (
-            <div 
-              key={i} 
+            <div
+              key={i}
               className="flex items-start gap-4 group"
               data-aos="fade-up"
-              data-aos-delay={i * 100} // Staggers each item as you scroll
+              data-aos-delay={i * 100}
             >
               {/* ICON */}
-              <div 
-                className="text-[#13AFFE] dark:text-[#F5A623] text-2xl mt-1 transform group-hover:scale-110 transition-transform duration-300"
+              <div
+                className="text-[#F5A623] group-hover:text-[#13AFFE] text-2xl mt-1 transform group-hover:scale-110 transition-all duration-300"
                 data-aos="zoom-in"
                 data-aos-delay={i * 100 + 200}
               >

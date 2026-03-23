@@ -1,5 +1,5 @@
 import { Facebook, Instagram } from "lucide-react";
-import { FaTiktok } from "react-icons/fa"; // 
+import { FaTiktok } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function FooterSection() {
@@ -12,14 +12,13 @@ export default function FooterSection() {
           <div>
             <h2 className="text-2xl font-bold text-white mb-3">Crystal Clean</h2>
 
-
             {/* Social Media Icons */}
             <div className="flex items-center gap-4 mt-2">
               <a
                 href="https://web.facebook.com/p/Crystal-clean-100080908440119/?_rdc=1&_rdr#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#13AFFE] transition"
+                className="text-[#F5A623] hover:text-[#13AFFE] transition duration-300"
               >
                 <Facebook size={20} />
               </a>
@@ -27,7 +26,7 @@ export default function FooterSection() {
                 href="https://www.instagram.com/crystal.clean.detail22/#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-pink-600 transition"
+                className="text-[#F5A623] hover:text-[#13AFFE] transition duration-300"
               >
                 <Instagram size={20} />
               </a>
@@ -35,7 +34,7 @@ export default function FooterSection() {
                 href="https://www.tiktok.com/@crystal.cl34n"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition"
+                className="text-[#F5A623] hover:text-[#13AFFE] transition duration-300"
               >
                 <FaTiktok size={20} />
               </a>
@@ -96,7 +95,6 @@ export default function FooterSection() {
 
         {/* Bottom Bar */}
         <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-gray-400">
-          {/* Left: Terms & Privacy */}
           <div className="flex gap-4 text-sm">
             <a href="/terms" className="hover:text-[#13AFFE] transition duration-300">
               Terms & Conditions
@@ -107,7 +105,6 @@ export default function FooterSection() {
             </a>
           </div>
 
-          {/* Center: Powered by Ansely */}
           <p className="text-center font-semibold text-gray-400">
             Powered by{" "}
             <a

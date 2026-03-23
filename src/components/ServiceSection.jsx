@@ -16,14 +16,14 @@ export default function ServiceSection() {
             icon: FaSoap,
             title: "Deep Clean",
             desc: "Comprehensive exterior washes and full interior valets removing dirt, grime, and odours, restoring your vehicle to pristine condition.",
-            color: "from-[#13AFFE] to-[#005bb5]", // Brand Blue linear
+            color: "from-[#13AFFE] to-[#005bb5]",
             borderColor: "border-[#13AFFE]/30",
         },
         {
             icon: FaGem,
             title: "Polishing",
             desc: "Professional machine polishing to restore shine, remove swirl marks and light scratches, and prepare your vehicle for long-lasting protection.",
-            color: "from-[#F5A623] to-[#e6c700]", // Brand Yellow linear
+            color: "from-[#F5A623] to-[#e6c700]",
             borderColor: "border-[#F5A623]/30",
         },
         {
@@ -159,7 +159,7 @@ export default function ServiceSection() {
                         { icon: FaCar, title: "Crystal Clean", desc: "Precision automotive care" }
                     ].map((badge, i) => (
                         <div key={i} className="bg-gray-100 dark:bg-[#0E0E0E] border border-gray-200 dark:border-gray-800 rounded-2xl p-6 text-center hover:bg-[#13AFFE]/5 transition-all group">
-                            <badge.icon className="text-4xl text-[#13AFFE] dark:text-[#F5A623] mx-auto mb-3 opacity-80 group-hover:scale-110 transition-transform" />
+                            <badge.icon className="text-4xl text-[#F5A623] group-hover:text-[#13AFFE] mx-auto mb-3 opacity-80 group-hover:scale-110 transition-all duration-300" />
                             <p className="font-black text-xl mb-1 uppercase tracking-tight">{badge.title}</p>
                             <p className="text-gray-500 dark:text-gray-500 text-sm font-medium">{badge.desc}</p>
                         </div>

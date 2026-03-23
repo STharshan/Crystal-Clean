@@ -4,19 +4,19 @@ const HeroSection = () => {
   const stats = [
     {
       title: "Mobile & Studio Detailing",
-      icon: <FaCar className="h-6 w-6 text-[#13AFFE] dark:text-[#F5A623]" />,
+      icon: <FaCar className="h-6 w-6 text-[#F5A623] group-hover:text-[#13AFFE] transition-colors duration-300" />,
     },
     {
       title: "10+ Years Experience",
-      icon: <FaUserTie className="h-6 w-6 dark:text-[#13AFFE] text-[#F5A623]" />,
+      icon: <FaUserTie className="h-6 w-6 text-[#F5A623] group-hover:text-[#13AFFE] transition-colors duration-300" />,
     },
     {
       title: "1000+ Satisfied Customers",
-      icon: <FaSmile className="h-6 w-6 text-[#13AFFE] dark:text-[#F5A623]" />,
+      icon: <FaSmile className="h-6 w-6 text-[#F5A623] group-hover:text-[#13AFFE] transition-colors duration-300" />,
     },
     {
       title: "Bespoke Detailing Packages",
-      icon: <FaStar className="h-6 w-6 dark:text-[#13AFFE] text-[#F5A623]" />,
+      icon: <FaStar className="h-6 w-6 text-[#F5A623] group-hover:text-[#13AFFE] transition-colors duration-300" />,
     },
   ];
 
@@ -34,14 +34,12 @@ const HeroSection = () => {
           onError={(e) => (e.currentTarget.style.display = "none")}
           className="w-full h-full object-cover"
         >
-          {/* Replace with your video path */}
           <source src="/bg.mp4" type="video/mp4" />
         </video>
-        {/* Dark Overlay to ensure text readability */}
         <div className="absolute inset-0 bg-black/60 dark:bg-black/70 transition-colors duration-300"></div>
       </div>
 
-      {/* --- CONTENT (Wrapped in relative z-10) --- */}
+      {/* --- CONTENT --- */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
@@ -78,8 +76,8 @@ const HeroSection = () => {
 
             {/* Location Detail */}
             <div className="pt-6" data-aos="zoom-in" data-aos-delay="800">
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20">
-                <FaMapMarkerAlt className="h-5 w-5 text-[#13AFFE] dark:text-[#F5A623] shrink-0 mt-1" />
+              <div className="group flex items-start gap-3 p-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 hover:border-[#13AFFE] transition-all duration-300">
+                <FaMapMarkerAlt className="h-5 w-5 text-[#F5A623] group-hover:text-[#13AFFE] transition-colors duration-300 shrink-0 mt-1" />
                 <div>
                   <p className="font-bold text-white">Location</p>
                   <p className="text-sm text-gray-200">
@@ -90,7 +88,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* RIGHT IMAGE (Optional: You can remove this or keep it as a secondary visual) */}
+          {/* RIGHT IMAGE */}
           <div className="relative w-full hidden lg:block" data-aos="fade-left" data-aos-duration="1200">
             <div className="aspect-video sm:aspect-4/3 w-full relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
               <img

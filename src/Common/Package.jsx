@@ -36,18 +36,15 @@ function QuoteModal({ isOpen, onClose, packageName, services }) {
             `*More Info:* ${form.info}`;
 
         const encoded = encodeURIComponent(message);
-        // Replace with your actual WhatsApp number (country code + number, no + sign)
         window.open(`https://wa.me/447446253967?text=${encoded}`, "_blank");
     };
 
     return (
-        // Backdrop
         <div
             className="fixed inset-0 z-50 flex items-center justify-center p-4"
             style={{ backgroundColor: "rgba(0,0,0,0.7)", backdropFilter: "blur(4px)" }}
             onClick={(e) => e.target === e.currentTarget && onClose()}
         >
-            {/* Modal Box */}
             <div
                 className="relative w-full max-w-lg rounded-2xl p-6 sm:p-8 shadow-2xl"
                 style={{ backgroundColor: "#1a1a1a", border: "1px solid rgba(255,255,255,0.08)" }}
@@ -66,7 +63,6 @@ function QuoteModal({ isOpen, onClose, packageName, services }) {
 
                 {/* Form Fields */}
                 <div className="space-y-4">
-                    {/* Row 1 */}
                     <div className="grid grid-cols-2 gap-3">
                         <div>
                             <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">
@@ -79,11 +75,7 @@ function QuoteModal({ isOpen, onClose, packageName, services }) {
                                 onChange={handleChange}
                                 placeholder="Enter Your Name"
                                 className="w-full rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none focus:ring-2 transition-all"
-                                style={{
-                                    backgroundColor: "#111",
-                                    border: "1px solid rgba(255,255,255,0.08)",
-                                    focusRingColor: "#13AFFE",
-                                }}
+                                style={{ backgroundColor: "#111", border: "1px solid rgba(255,255,255,0.08)" }}
                                 onFocus={(e) => (e.target.style.border = "1px solid #13AFFE")}
                                 onBlur={(e) => (e.target.style.border = "1px solid rgba(255,255,255,0.08)")}
                             />
@@ -106,7 +98,6 @@ function QuoteModal({ isOpen, onClose, packageName, services }) {
                         </div>
                     </div>
 
-                    {/* Service */}
                     <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">
                             Service Required
@@ -125,7 +116,6 @@ function QuoteModal({ isOpen, onClose, packageName, services }) {
                         </select>
                     </div>
 
-                    {/* Row 2 */}
                     <div className="grid grid-cols-2 gap-3">
                         <div>
                             <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">
@@ -159,7 +149,6 @@ function QuoteModal({ isOpen, onClose, packageName, services }) {
                         </div>
                     </div>
 
-                    {/* More Info */}
                     <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">
                             More Info
@@ -196,17 +185,14 @@ function QuoteModal({ isOpen, onClose, packageName, services }) {
 export default function Package({ data }) {
     const brandBlue = "#13AFFE";
 
-    // Modal state
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedPackage, setSelectedPackage] = useState("");
-    // Note: selectedPackage is only used to track which pkg opened modal, not pre-fill service
 
     if (!data) return null;
 
     const { contactLinks, packages, detail } = data;
     const displayDetail = Array.isArray(detail) ? detail[0] : detail;
 
-    // Fixed 4 services
     const allServices = ["Paint Protection", "Ceramic Coating", "Polishing", "Deep Clean"];
 
     const openModal = (pkgType) => {
@@ -249,7 +235,7 @@ export default function Package({ data }) {
                                     rel="noopener noreferrer"
                                     className="group flex items-center gap-4 border border-black/5 dark:border-white/10 rounded-xl p-4 bg-white dark:bg-[#111]/70 hover:shadow-md transition-all duration-300"
                                 >
-                                    <div className="flex items-center justify-center h-10 w-10" style={{ color: brandBlue }}>
+                                    <div className="flex items-center justify-center h-10 w-10 text-[#F5A623] group-hover:text-[#13AFFE] transition-colors duration-300">
                                         {iconMap[link.icon]}
                                     </div>
                                     <h6 className="text-base font-semibold group-hover:text-[#13AFFE] transition-colors">
@@ -289,7 +275,6 @@ export default function Package({ data }) {
                                     ))}
                                 </div>
 
-                                {/* ✅ Button now opens modal instead of scrolling to contact */}
                                 <button
                                     onClick={() => openModal(pkg.type)}
                                     className="w-full block text-white font-bold py-4 rounded-full transition-all text-center hover:opacity-90 active:scale-95"
@@ -303,7 +288,6 @@ export default function Package({ data }) {
                 </div>
             </section>
 
-            {/* WhatsApp Quote Modal */}
             <QuoteModal
                 isOpen={modalOpen}
                 onClose={() => setModalOpen(false)}

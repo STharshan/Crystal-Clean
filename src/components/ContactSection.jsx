@@ -90,7 +90,7 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
               {contactInfo.map((item, i) => (
                 <div key={i} className="flex items-start space-x-5 group">
-                  <div className="p-4 rounded-2xl bg-[#13AFFE]/10 dark:bg-[#F5A623]/10 text-[#13AFFE] dark:text-[#F5A623] transition-transform group-hover:scale-110">
+                  <div className="p-4 rounded-2xl bg-[#F5A623]/10 text-[#F5A623] group-hover:bg-[#13AFFE]/10 group-hover:text-[#13AFFE] transition-all duration-300 group-hover:scale-110">
                     {item.icon}
                   </div>
                   <div>
@@ -106,10 +106,7 @@ export default function Contact() {
           </div>
 
           {/* Right - Contact Form */}
-          <div
-            
-            className="bg-gray-50 dark:bg-[#161616] border border-gray-100 dark:border-white/5 rounded-3xl shadow-2xl p-8 md:p-10"
-          >
+          <div className="bg-gray-50 dark:bg-[#161616] border border-gray-100 dark:border-white/5 rounded-3xl shadow-2xl p-8 md:p-10">
             <h3 className="text-xl font-black uppercase italic mb-8 text-[#0E0E0E] dark:text-white">
               Quick Booking Request
             </h3>
