@@ -56,6 +56,42 @@ export const GALLERY_ITEMS = [
     media: "video",
     src: "/v3.mp4",
   },
+   {
+    id: 9,
+    type: "single",
+    media: "image",
+    src: "/im4.jpeg",
+  },
+  {
+    id: 10,
+    type: "single",
+    media: "image",
+    src: "/im5.jpeg",
+  },
+  {
+    id: 11,
+    type: "single",
+    media: "image",
+    src: "/im6.jpeg",
+  },
+  {
+    id: 12,
+    type: "single",
+    media: "image",
+    src: "/im7.jpeg",
+  },
+   {
+    id: 13,
+    type: "single",
+    media: "image",
+    src: "/im8.jpeg",
+  },
+  {
+    id: 14,
+    type: "single",
+    media: "image",
+    src: "/im9.jpeg",
+  },
 ];
 
 export default GALLERY_ITEMS;
