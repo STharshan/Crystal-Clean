@@ -9,7 +9,7 @@ import GDPRConsent from "./components/GDPRButton";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./page/Home";
 import Footer from "./components/FooterSection";
-import Gallery from "./page/Gallery";
+
 import PaintProtection from "./page/Services/PaintProtection";
 import Polishing from "./page/Services/Polishing";
 import CeramicCoating from "./page/Services/CeramicCoating";
@@ -33,7 +33,7 @@ function App() {
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
+       
         <Route path="/paintprotection" element={<PaintProtection /> }/>
         <Route path="/ceramiccoating" element={<CeramicCoating /> } />
         <Route path="/polishing" element={<Polishing /> } />

@@ -110,7 +110,7 @@ export default function Navbar() {
             Why Choose
           </HashLink>
 
-          <HashLink to="/gallery" className="hover:text-[#13AFFE] dark:hover:text-[#F5A623] transition">
+          <HashLink to="/#gallery" className="hover:text-[#13AFFE] dark:hover:text-[#F5A623] transition">
             Gallery
           </HashLink>
 
