@@ -7,7 +7,7 @@ import WhyChooseUs from "../components/WhyChoose"
 import ServiceSection from "../components/ServiceSection"
 import TestimonialsSection from "../components/Testimonial"
 import Navbar from "../components/Navbar"
-
+import Gallery from "../components/Newgallery"
 const Home = () => {
     return (
         <div>
@@ -17,6 +17,7 @@ const Home = () => {
             <WhyChooseUs />
             <ServiceSection />
             <TestimonialsSection />
+            <Gallery />
             <ContactSection />
             <MapSection />
         </div>

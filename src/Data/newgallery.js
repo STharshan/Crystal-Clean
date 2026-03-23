@@ -2,21 +2,14 @@ export const GALLERY_ITEMS = [
   {
     id: 1,
     type: "before-after",
-    beforeSrc: "/before.jpeg",
+    beforeSrc: "/before1.jpeg",
     beforeMedia: "image",
-    afterSrc: "/after1.mp4",
-    afterMedia: "video",
-  },
-  {
-    id: 2,
-    type: "before-after",
-    beforeSrc: "/before2.jpeg",
-    beforeMedia: "image",
-    afterSrc: "/after2.jpeg",
+    afterSrc: "/after1.jpeg",
     afterMedia: "image",
   },
+
     {
-    id: 3,
+    id: 2,
     type: "single",
     media: "video",
     src: "/v1.mp4",
