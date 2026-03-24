@@ -18,11 +18,11 @@ const Banner = () => {
           <a
             href='/#contact'
             style={{ backgroundColor: '#13AFFE' }}
-            className="group relative text-white px-8 py-4 rounded-full font-medium text-lg flex items-center justify-center gap-2 hover:brightness-110 transition-all duration-300 w-full sm:w-auto shadow-lg shadow-[#13AFFE]/20"
+            className="group relative text-white px-8 py-4 rounded-full font-medium text-lg flex items-center justify-center gap-2 hover:brightness-110 active:brightness-110 transition-all duration-300 w-full sm:w-auto shadow-lg shadow-[#13AFFE]/20"
           >
             Get in touch
             <svg 
-              className="w-5 h-5 transform transition-transform group-hover:translate-x-1" 
+              className="w-5 h-5 transform transition-transform group-hover:translate-x-1 group-active:translate-x-1" 
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24"
