@@ -71,8 +71,8 @@ export default function Contact() {
         
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-black mb-4 uppercase italic text-[#0E0E0E] dark:text-white">
-            Get In <span className="text-[#13AFFE] dark:text-[#F5A623]">Touch</span>
+          <h2 className="text-4xl md:text-6xl font-black mb-4 text-[#13AFFE] uppercase italic">
+            Get In <span className=" dark:text-[#F5A623]">Touch</span>
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-600 dark:text-gray-400 font-medium">
             Ready to give your vehicle the Crystal Clean finish? 

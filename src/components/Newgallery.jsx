@@ -94,7 +94,6 @@ export default function Gallery({ data }) {
 
   const item = GALLERY_ITEMS[current];
 
-  const title = data?.title || "Our Work";
   const subtitle = data?.subtitle || "Real Results. Every Time.";
 
   return (
@@ -113,7 +112,7 @@ export default function Gallery({ data }) {
             </span>
             <div className="h-0.5 w-10" style={{ backgroundColor: brandBlue }} />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold">{title}</h2>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#13AFFE]">Our <span className="text-[#F5A623]">Work</span></h2>
           <p className="text-gray-400 mt-2 text-sm sm:text-base">{subtitle}</p>
         </div>
 

@@ -8,6 +8,7 @@ import ServiceSection from "../components/ServiceSection"
 import TestimonialsSection from "../components/Testimonial"
 import Navbar from "../components/Navbar"
 import Gallery from "../components/Newgallery"
+import Banner from "../components/Banner"
 const Home = () => {
     return (
         <div>
@@ -17,6 +18,7 @@ const Home = () => {
             <WhyChooseUs />
             <ServiceSection />
             <TestimonialsSection />
+            <Banner />
             <Gallery />
             <ContactSection />
             <MapSection />

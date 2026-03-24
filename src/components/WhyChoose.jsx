@@ -49,8 +49,8 @@ export default function WhyChooseUs() {
       <div className="max-w-6xl mx-auto">
         {/* HEADER */}
         <div className="mb-14" data-aos="fade-down" data-aos-duration="1000">
-          <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wide">
-            Why Choose <span className="text-[#13AFFE] dark:text-[#F5A623]">Us</span>
+          <h2 className="text-4xl md:text-5xl text-[#13AFFE] font-bold uppercase tracking-wide">
+            Why Choose <span className=" dark:text-[#F5A623]">Us</span>
           </h2>
           <div
             className="w-20 h-1 bg-[#13AFFE] dark:bg-[#F5A623] mt-4"

@@ -63,8 +63,8 @@ const TestimonialsSection = () => {
           <p className="text-[#13AFFE] dark:text-[#F5A623] uppercase tracking-[5px] text-sm font-black mb-2">
             Testimonials
           </p>
-          <h2 className="text-4xl md:text-5xl font-black leading-[1.2]">
-            What Our <span className="text-[#13AFFE] dark:text-[#F5A623]">Customers</span> Say
+          <h2 className="text-4xl md:text-5xl text-[#13AFFE] font-black leading-[1.2]">
+            What Our <span className=" dark:text-[#F5A623]">Customers Say</span> 
           </h2>
           <p className="text-gray-500 dark:text-[#868386] text-base mt-4 max-w-lg font-medium">
             Our mission is to deliver precision, passion, and perfection. 
