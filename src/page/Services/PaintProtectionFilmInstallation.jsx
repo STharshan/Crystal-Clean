@@ -9,11 +9,11 @@ import {
     packagesData,
     serviceBannerData,
     serviceDetailData, // Assuming you refactor this next
-} from '../../Data/PaintProtection/data';
+} from '../../Data/PaintProtectionFilmInstallation/data';
 import ServiceNavbar from '../../components/ServiceNavbar';
 
 
-const PaintProtection = () => {
+const PaintProtectionFilmInstallation = () => {
     return (
         <div className="bg-black">
             <ServiceNavbar />
@@ -24,4 +24,4 @@ const PaintProtection = () => {
     );
 };
 
-export default PaintProtection;
+export default PaintProtectionFilmInstallation;

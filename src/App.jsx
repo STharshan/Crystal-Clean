@@ -10,11 +10,11 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./page/Home";
 import Footer from "./components/FooterSection";
 
-import PaintProtection from "./page/Services/PaintProtection";
 import Polishing from "./page/Services/Polishing";
 import CeramicCoating from "./page/Services/CeramicCoating";
 import DeepClean from "./page/Services/DeepClean";
 import ScrollToHash from "./components/ScrollToHash";
+import PaintProtectionFilmInstallation from "./page/Services/PaintProtectionFilmInstallation";
 
 function App() {
   // 4. Initialize AOS globally
@@ -34,7 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
        
-        <Route path="/paintprotection" element={<PaintProtection /> }/>
+        <Route path="/paint-protection-film-installation" element={<PaintProtectionFilmInstallation /> }/>
         <Route path="/ceramiccoating" element={<CeramicCoating /> } />
         <Route path="/polishing" element={<Polishing /> } />
         <Route path="/deepclean" element={<DeepClean />} />

@@ -61,7 +61,7 @@ export default function ServiceSection() {
                         Our Specialised<span className="text-[#F5A623]"> Services</span> 
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto font-medium">
-                        Combining technical expertise with precision tools to handle everything from routine maintenance to complex paint protection.
+                        Combining technical expertise with precision tools to handle everything from routine maintenance to complex paint protection film installation.
                     </p>
                 </div>
 

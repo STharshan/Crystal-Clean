@@ -1,14 +1,14 @@
 // data.js updated with Diagnostics Service
 
 export const serviceBannerData = {
-  title: "Professional Paint Protection Film (PPF)",
+  title: "Professional Paint Protection Film Installation (PPF)",
   description: "Ultimate physical protection for your vehicle’s paintwork. Our certified PPF installation service provides an invisible shield against stone chips, scratches, and road debris, keeping your vehicle in pristine condition.",
   thumbnailImage: "about.png",
 };
 
 export const serviceDetailData = {
   mainTitle: "Certified Paint Protection Film Installation",
-  mainDescription: "Paint Protection Film (PPF) is a high-performance, transparent urethane film applied to vulnerable areas of your vehicle. Unlike coatings, PPF provides a physical barrier that absorbs impacts from stones, road debris, and minor abrasions.",
+  mainDescription: "Paint Protection Film Installation (PPF) is a high-performance, transparent urethane film applied to vulnerable areas of your vehicle. Unlike coatings, PPF provides a physical barrier that absorbs impacts from stones, road debris, and minor abrasions.",
   subDesc: "At Crystal Clean, we are certified PPF installers, ensuring precision fitting, seamless edges, and long-lasting durability. All installations are completed in our controlled indoor studio environment in Okehampton for maximum accuracy and clean application.",
   // Left Column - When you need it
   benefits: {
