@@ -1,19 +1,18 @@
 import { useRef, useState } from 'react';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { BUSINESS_DETAILS } from "../constants/businessInfo";
 
 export default function Contact() {
-
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
-  const mapsUrl = "https://www.google.com/maps/search/?api=1&query=Unit+1B+Cranmere+Rd+Okehampton+EX20+1UE";
 
   const contactInfo = [
     {
       icon: <Phone className="h-5 w-5" />,
       title: 'Phone',
       value: (
-        <a href="tel:+447446253967" className="hover:underline font-bold text-[#13AFFE] dark:text-[#F5A623]">
-          +44 7446 253967
+        <a href={BUSINESS_DETAILS.phoneHref} className="hover:underline font-bold text-[#13AFFE] dark:text-[#F5A623]">
+          {BUSINESS_DETAILS.phone}
         </a>
       ),
       note: 'Call us for immediate assistance',
@@ -22,8 +21,8 @@ export default function Contact() {
       icon: <Mail className="h-5 w-5" />,
       title: 'Email',
       value: (
-        <a href="mailto:crystal.cl34n@gmail.com" className="hover:underline font-bold text-[#13AFFE] dark:text-[#F5A623]">
-          crystal.cl34n@gmail.com
+        <a href={BUSINESS_DETAILS.emailHref} className="hover:underline font-bold text-[#13AFFE] dark:text-[#F5A623]">
+          {BUSINESS_DETAILS.email}
         </a>
       ),
       note: 'Send us your questions anytime',
@@ -32,8 +31,8 @@ export default function Contact() {
       icon: <MapPin className="h-5 w-5" />,
       title: 'Address',
       value: (
-        <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline font-bold text-[#13AFFE] dark:text-[#F5A623]">
-          Unit 1B Cranmere Rd, Okehampton EX20 1UE
+        <a href={BUSINESS_DETAILS.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline font-bold text-[#13AFFE] dark:text-[#F5A623]">
+          {BUSINESS_DETAILS.address}
         </a>
       ),
       note: 'Fully equipped studio with onsite parking',
@@ -42,10 +41,12 @@ export default function Contact() {
       icon: <Clock className="h-5 w-5" />,
       title: 'Opening Hours',
       value: (
-        <div className="text-gray-600 dark:text-gray-400 font-medium">
-          <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
-          <p>Saturday: 9:00 AM - 1:00 PM</p>
-          <p>Sunday: Closed (By Appointment)</p>
+        <div className="text-gray-600 dark:text-gray-400 font-medium text-sm space-y-1">
+          {BUSINESS_DETAILS.openingHours.map((item) => (
+            <p key={item.day}>
+              <span className="font-bold">{item.day}:</span> {item.time}
+            </p>
+          ))}
         </div>
       ),
     },
@@ -56,10 +57,10 @@ export default function Contact() {
     setLoading(true);
     const form = new FormData(formRef.current);
 
-    const whatsappMessage = `*New Booking Enquiry*\n*Name:* ${form.get("firstName")} ${form.get("lastName")}\n*Email:* ${form.get("email")}\n*Phone:* ${form.get("phone")}\n*Service:* ${form.get("service")}\n*Message:* ${form.get("message")}`;
+    const whatsappMessage = `*New Booking Enquiry*\n\nName: ${form.get("firstName")} ${form.get("lastName")}\nEmail: ${form.get("email")}\nService: ${form.get("service")}\nMessage: ${form.get("message")}`;
     
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    window.open(`https://wa.me/447446253967?text=${encodedMessage}`, "_blank");
+    window.open(`https://wa.me/${BUSINESS_DETAILS.whatsappNumber}?text=${encodedMessage}`, "_blank");
     
     setLoading(false);
     formRef.current.reset();
@@ -72,11 +73,11 @@ export default function Contact() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black mb-4 text-[#13AFFE] uppercase italic">
-            Get In <span className=" dark:text-[#F5A623]">Touch</span>
+            Get In <span className="text-black dark:text-[#F5A623]">Touch</span>
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-600 dark:text-gray-400 font-medium">
             Ready to give your vehicle the Crystal Clean finish? 
-            Contact our Okehampton studio today.
+            Contact our {BUSINESS_DETAILS.name} studio today.
           </p>
         </div>
 
@@ -90,11 +91,11 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
               {contactInfo.map((item, i) => (
                 <div key={i} className="flex items-start space-x-5 group">
-                  <div className="p-4 rounded-2xl bg-[#F5A623]/10 text-[#F5A623] group-hover:bg-[#13AFFE]/10 group-hover:text-[#13AFFE] transition-all duration-300 group-hover:scale-110">
+                  <div className="p-4 rounded-2xl bg-[#F5A623]/10 text-[#F5A623] group-hover:bg-[#13AFFE]/10 group-hover:text-[#13AFFE] transition-all duration-300 group-hover:scale-110 shadow-sm">
                     {item.icon}
                   </div>
                   <div>
-                    <h4 className="font-black uppercase text-sm tracking-widest mb-1 text-[#0E0E0E] dark:text-white">
+                    <h4 className="font-black uppercase text-xs tracking-widest mb-1 text-gray-400 dark:text-gray-500">
                       {item.title}
                     </h4>
                     <div className="text-lg">{item.value}</div>
@@ -106,19 +107,24 @@ export default function Contact() {
           </div>
 
           {/* Right - Contact Form */}
-          <div className="bg-gray-50 dark:bg-[#161616] border border-gray-100 dark:border-white/5 rounded-3xl shadow-2xl p-8 md:p-10">
-            <h3 className="text-xl font-black uppercase italic mb-8 text-[#0E0E0E] dark:text-white">
+          <div className="bg-gray-50 dark:bg-[#161616] border border-gray-100 dark:border-white/5 rounded-3xl shadow-2xl p-8 md:p-10 relative overflow-hidden">
+            {/* Subtle Accent Background Decor */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-[#13AFFE]/5 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+            
+            <h3 className="text-xl font-black uppercase italic mb-8 text-[#0E0E0E] dark:text-white flex items-center gap-2">
+              <Send className="w-5 h-5 text-[#13AFFE]" />
               Quick Booking Request
             </h3>
-            <form ref={formRef} onSubmit={sendWhatsApp} className="space-y-5">
+
+            <form ref={formRef} onSubmit={sendWhatsApp} className="space-y-5 relative z-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">First Name</label>
-                  <input name="firstName" placeholder="John" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all" />
+                  <input name="firstName" type="text" placeholder="John" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all" />
                 </div>
                 <div>
                   <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Last Name</label>
-                  <input name="lastName" placeholder="Doe" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all" />
+                  <input name="lastName" type="text" placeholder="Doe" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all" />
                 </div>
               </div>
 
@@ -129,12 +135,11 @@ export default function Contact() {
 
               <div>
                 <label className="block text-xs font-black uppercase tracking-widest mb-2 text-gray-500">Service Required</label>
-                <select name="service" className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all appearance-none">
-                  <option>Full Valet / Deep Clean</option>
-                  <option>Machine Polishing</option>
-                  <option>Ceramic Coating</option>
-                  <option>PPF Installation</option>
-                  <option>Mobile Detailing</option>
+                <select name="service" required className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0E0E0E] border border-gray-200 dark:border-white/10 text-black dark:text-white focus:ring-2 focus:ring-[#13AFFE] outline-none transition-all appearance-none cursor-pointer">
+                  <option value="" disabled selected>Select a service...</option>
+                  {BUSINESS_DETAILS.services.map((service) => (
+                    <option key={service} value={service}>{service}</option>
+                  ))}
                 </select>
               </div>
 
@@ -146,7 +151,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-4 rounded-xl text-sm font-black uppercase tracking-widest transition-all shadow-xl hover:scale-[1.02] active:scale-95 bg-[#F5A623] text-white dark:text-[#0E0E0E]"
+                className="w-full py-4 rounded-xl text-sm font-black uppercase tracking-widest transition-all shadow-xl hover:scale-[1.02] active:scale-95 bg-[#F5A623] hover:bg-[#13AFFE] text-white dark:text-[#0E0E0E] dark:hover:text-white"
               >
                 {loading ? 'Opening WhatsApp...' : 'Request Booking via WhatsApp'}
               </button>

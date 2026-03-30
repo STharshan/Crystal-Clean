@@ -35,7 +35,7 @@ export default function Navbar() {
   };
 
   const services = [
-    { name: "Paint Protection", path: "/paintprotection" },
+    { name: "Paint Protection Film Installation", path: "/paint-protection-film-installation" },
     { name: "Ceramic Coating", path: "/ceramiccoating" },
     { name: "Polishing", path: "/polishing" },
     { name: "Deep Clean", path: "/deepclean" },
