@@ -1,4 +1,4 @@
-// data.js updated with Diagnostics Service
+// data.js updated with Service
 
 export const serviceBannerData = {
   title: "Professional Paint Protection Film Installation (PPF)",
